@@ -1,0 +1,28 @@
+/* GENERAL THEME */
+.theme-fuchsia {
+  background-color: $theme-primary;
+  color: $white;
+  border-color: darken($theme-primary,12%);
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.theme-grey {
+  background-color: $gray-0;
+  color: rgba($theme-secondary,0.8);
+  border-color: darken($gray-0,12%);
+  h1, h2, a {
+    color: $theme-primary;
+  }
+}
+
+.theme-white {
+  background-color: $white;
+  color: rgba($theme-secondary,0.8);
+  border-color: darken($white,12%);
+  h1, h2, a {
+    color: $theme-primary;
+  }
+}

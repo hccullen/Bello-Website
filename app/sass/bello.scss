@@ -3,6 +3,12 @@
 @import 'reset';
 @import 'variables';
 @import 'base';
+@import 'themes';
 
 // Components
 @import 'components/navigation';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/device-mockups';
+@import 'components/form';
+@import 'components/module';

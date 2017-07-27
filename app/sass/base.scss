@@ -2,7 +2,58 @@ html {
   font-size: $rem-size;
 }
 
-body, p {
-  font-size: $body-font-size;
+body {
   font-family: $body-font-family;
 }
+
+
+p, a, li {
+  font-size: $body-font-size;
+  margin-bottom: 1em;
+  line-height:1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height:1.5;
+  margin-bottom: 0.25em;
+}
+h1 {
+  font-size: $h2-font-size;
+  font-weight: 900;
+  @media screen and (min-width: 48em) {
+    font-size: $h1-font-size;
+  }
+}
+
+h2 {
+  font-size: $h3-font-size;
+  font-weight: 700;
+  @media screen and (min-width: 48em) {
+    font-size: $h2-font-size;
+  }
+}
+
+h3 {
+  font-size: $body-font-size;
+  font-weight: 700;
+  @media screen and (min-width: 48em) {
+    font-size: $h3-font-size;
+  }
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  @media screen and (min-width: 48em) {
+    font-size: 1.333rem;
+  }
+}
+h5 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform:uppercase;
+  @media screen and (min-width: 48em) {
+    font-size: 1rem;
+  }
+}
+/* THEMES */
+// Fuchsia
