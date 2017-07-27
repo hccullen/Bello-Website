@@ -52,16 +52,29 @@
     padding: 0 0.5rem;
     vertical-align: middle;
     text-transform: uppercase;
-    color: #fff;
     border: 0;
     border-radius: 6px;
-    background-color: $theme-primary;
     font-size: 0.7rem;
     line-height: 1.2;
+    font-weight: 700;
     cursor: pointer;
     @media screen and (min-width: 24em) {
      font-size: 0.85rem;
      padding: 0 1rem;
+    }
+
+    &.button--theme-fuchsia {
+      background-color: $theme-primary;
+      color: $white;
+    }
+
+    &.button--theme-green {
+      background-color: darken(complement($theme-primary),5%);
+      color: $white;
+    }
+    &.button--theme-orange {
+      background-color: #ff9800;
+      color: $white;
     }
   }
 }
