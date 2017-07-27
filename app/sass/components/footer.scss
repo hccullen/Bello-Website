@@ -1,0 +1,63 @@
+/* FOOTER */
+.footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  .col-sm {
+    padding: 0 1rem;
+  }
+  p, a {
+    font-size: 0.8rem;
+    color: rgba($theme-secondary,0.54);
+    margin: 0 0 0.25em;
+    svg {
+      fill: rgba($theme-secondary,0.54);
+      margin-right:0.8em;
+      transition: fill 0.4s ease;
+      &.android:hover {
+        fill: $brand-android;
+      }
+      &.apple:hover {
+        fill: $brand-apple;
+      }
+      &.facebook:hover {
+        fill: $brand-facebook;
+      }
+      &.linkedin:hover {
+        fill: $brand-linkedin;
+      }
+      &.twitter:hover {
+        fill: $brand-twitter;
+      }
+    }
+  }
+  .logo {
+    width: 118px;
+    height: 36px;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+    .logotype, .logomark {
+      fill: rgba($theme-secondary, 0.54);
+      transition: fill 0.4s ease;
+    }
+    &:hover {
+      .logomark {
+        fill: $theme-primary;
+      }
+      .logotype {
+        fill: $theme-secondary;
+      }
+    }
+  }
+  h4 {
+    font-size: 1rem;
+    color: rgba($theme-secondary,0.54);
+  }
+  ul.social-links {
+    list-style-type: none;
+    li {
+      margin: 0;
+      line-height: 1.2;
+      display: inline;
+    }
+  }
+}
