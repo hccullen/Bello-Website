@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-<div class="{% if not data.type == 'sticky' %} nav--prerender{% endif %}"></div>
+<div class="{% if data.type != 'sticky' %} nav--prerender{% endif %}"></div>
 
 <div class="nav nav--type-sticky nav--theme-{{data.theme|default('dark')}} nav--type-{{data.type|default('fixed')}} nav--affix--theme-white">
   <div class="nav__container container">
