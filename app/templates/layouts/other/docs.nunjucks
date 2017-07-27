@@ -1,0 +1,23 @@
+<!-- docs.nunjucks -->
+{% extends "layouts/base.nunjucks" %}
+{% import 'components/global/navigation.nunjucks' as navigation %}
+
+{% block wrapper %}
+{{ navigation.d() }}
+
+<div class="docs">
+  <div class="container">
+    <div class="row top-xs around-xs">
+      <div class="col-sm-8">
+        <h1>{{title}}</h1>
+        {% block content %}
+
+        {% endblock %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

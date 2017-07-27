@@ -56,8 +56,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K93D8T"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    {% include 'partials/global/navigation.nunjucks' %}
-    {% block content %}
+
+    {% block wrapper %}
 
 
     {% endblock %}
