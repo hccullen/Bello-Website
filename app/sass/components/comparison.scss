@@ -1,0 +1,50 @@
+.module--comparison {
+  text-align: center;
+  h3 {
+    margin: 1em 0;
+  }
+  .my_feature {
+    min-height: 4rem;
+    p {
+      color: #262436;
+      font-size: 1em;;
+      line-height: 1.3;
+      margin: 0;
+      @media screen and (min-width: 48em) {
+        font-size: $body-font-size;
+      }
+    }
+    span {
+      padding: .6em;
+      color: rgba($theme-primary,0.4);
+      border: 1px solid rgba($theme-primary,0.4);
+      border-radius: 500px;
+      background-color: rgba($theme-primary,0.1);
+      font-size: .5em;
+      line-height: .5;
+      margin-top: 0;
+      display: inline-block;
+      -webkit-transform: translateY(-.2em);
+      transform: translateY(-.2em);
+    }
+  }
+  .my_planFeature {
+    text-align: center;
+    color: $theme-secondary;
+    font-size: 1em;
+    line-height: 4;
+    vertical-align: middle;
+    min-height: 4rem;
+    @media screen and (min-width: 48em) {
+      font-size: $body-font-size;
+      line-height: 0;
+    }
+    svg {
+      fill: $theme-primary;
+    }
+  }
+  .my_plan1 {
+    background: rgba($theme-primary,0.1);
+  }
+
+}

@@ -1,0 +1,25 @@
+{% macro d(data) %}
+
+<div class="module module--mini module--customers theme-{{data.theme|default('grey')}}{% if data.noborder %} no-border{% endif %}">
+  <div class="container">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12 col-sm-6">
+        <h4>Teams using Bello</h4>
+
+        <img src="https://logo.clearbit.com/https://www.seas-nve.dk?s=64" alt="Seas-NVE" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.danskebank.com?s=64" alt="Danske Bank" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.nykredit.dk?s=64" alt="Nykredit" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.pfa.dk?s=64" alt="PFA" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.novonordisk.dk?s=64" alt="Novo Nordisk" class="customer-logo">
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h4>Bello in the Media</h4>
+        <img src="https://i.forbesimg.com/media/assets/appicons/forbes-app-icon_144x144.png" alt="Forbes" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.borsen.com?s=64" alt="Børsen" class="customer-logo">
+        <img src="https://logo.clearbit.com/https://www.finans.dk?s=64" alt="Finans" class="customer-logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

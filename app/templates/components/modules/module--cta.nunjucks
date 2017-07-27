@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-<div class="module module--small module--cta theme-{{data.theme|default('fuchsia')}}">
+<div class="module module--small module--cta theme-{{data.theme|default('fuchsia')}}{% if data.noborder %} no-border{% endif %}">
   <div class="container">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">

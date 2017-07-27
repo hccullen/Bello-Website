@@ -1,0 +1,158 @@
+{% macro d(data) %}
+
+<div class="module module--feature theme-{{data.theme|default('grey')}} module--comparison{% if data.noborder %} no-border{% endif %}">
+  <div class="container">
+    <div class="row center-xs">
+      <div class="col-sm-8 col-md-7">
+        <h2>{{data.title}}</h2>
+        <p>{{data.subtitle}}</p>
+      </div>
+    </div>
+  	<div class="row">
+  		<div class="col-xs-7 col-xs-offset-5 col-sm-8 col-sm-offset-4">
+  			<div class="row">
+  				<div class="col-xs-6 my_planHeader my_plan1">
+  					<h3>Bello</h3>
+  				</div>
+  				<div class="col-xs-6 my_planHeader my_plan2">
+  					<h3>Slack</h3>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Live chat</p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Mobile &amp; Desktop Apps</p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Unlimited Users</p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Conversation Threads <span title="Each new topic is its own thread, avoiding constant distractions and noisy channels.">?</span></p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2"></div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Multi-Team Messaging <span title="Create a conversation with multiple people and teams, so you can all collaborate together.">?</span></p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2"></div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Employee Advocacy <span title="Employees can share approved content instantly, helping to expand your business social reach.">?</span></p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2"></div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Phone Support</p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+  					<path d="M0 0h24v24H0z" fill="none"></path>
+  					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2"></div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row my_featureRow">
+  		<div class="col-xs-5 col-sm-4 my_feature">
+  			<p>Price for 25 Users</p>
+  		</div>
+  		<div class="col-xs-7 col-sm-8">
+  			<div class="row">
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan1">
+  					$99 /mth
+  				</div>
+  				<div class="col-xs-6 col-sm-6 my_planFeature my_plan2">
+  					$166 /mth
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+{% endmacro %}
