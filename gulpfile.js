@@ -87,7 +87,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify compiled CSS
 gulp.task('minify-css_unchained', function() {
-    return gulp.src('develop/css/main.css')
+    return gulp.src('develop/css/bello.css')
         .pipe(cleanCSS({ compatibility: '*' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('develop/css'))
@@ -189,14 +189,14 @@ gulp.task('build', ['nunjucks', 'sass', 'minify-css', 'minify-js','critical','bu
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js', 'image-move', 'nunjucks'], function() {
-    gulp.watch('app/less/*.sass', ['sass_unchained']);
+    gulp.watch('app/sass/**/*.scss', ['sass_unchained']);
     gulp.watch('develop/css/*.css', ['minify-css_unchained']);
-    gulp.watch('app/js/*.js', ['minify-js']);
+    gulp.watch('app/js/**/*.js', ['minify-js']);
     gulp.watch('app/img/*', ['image-move']);
     gulp.watch('app/pages/**/*.nunjucks', ['nunjucks']);
     gulp.watch('app/templates/**/*.nunjucks', ['nunjucks']);
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('develop/*.html', browserSync.reload);
     gulp.watch('develop/js/*.js', browserSync.reload);
-    gulp.watch('develop/css/*.min.css', browserSync.reload);
+    // gulp.watch('develop/css/*.min.css', browserSync.reload);
 });
