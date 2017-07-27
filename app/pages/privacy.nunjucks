@@ -6,6 +6,7 @@
 {% set meta_og_image = "" %} #}
 
 {% set title = "Privacy Policy" %}
+{% set main_image = "https://im.ages.io/NKrigl4?width=1000&height=500" %}
 
 {% block content %}
 

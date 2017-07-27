@@ -7,8 +7,9 @@
 
 <div class="docs">
   <div class="container">
-    <div class="row top-xs around-xs">
-      <div class="col-sm-11 col-md-9 col-lg-8">
+    <div class="row top-xs around-xs full-bleed">
+      <div class="col-sm-12 col-md-9 col-lg-8">
+        <img class="img-responsive blog-main-image" src="{{main_image}}" alt="">
       </div>
     </div>
     <div class="row top-xs around-xs">
