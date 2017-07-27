@@ -12,5 +12,6 @@ Variables:
 - cta (Get Started*)
 - image *
 - alt (Bello app screenshot*)
+- flip (true, false*)
 
 ### Module--simple
