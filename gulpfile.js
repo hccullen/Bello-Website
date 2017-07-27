@@ -43,7 +43,7 @@ gulp.task('nunjucks', function() {
 
 // Compile SASS and SCSS files
 gulp.task('sass', ['nunjucks'], function () {
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src('app/sass/bello.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
@@ -58,7 +58,7 @@ gulp.task('sass', ['nunjucks'], function () {
 
 // Compile SASS and SCSS files
 gulp.task('sass_unchained', function () {
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src('app/sass/bello.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
@@ -76,7 +76,7 @@ gulp.task('sass_unchained', function () {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-    return gulp.src('develop/css/main.css')
+    return gulp.src('develop/css/bello.css')
         .pipe(cleanCSS({ compatibility: '*' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('develop/css'))
