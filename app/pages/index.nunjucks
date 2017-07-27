@@ -1,6 +1,62 @@
 <!-- index.nunjucks -->
 {% extends "layouts/base.nunjucks" %}
+{% import 'components/global/navigation.nunjucks' as navigation %}
+{% import 'components/hero--normal.nunjucks' as hero %}
+{% import 'components/module--simple.nunjucks' as moduleSimple %}
+{% import 'components/module--cta.nunjucks' as moduleCta %}
 
-{% block content %}
-HELLO THERE
+{# {% set meta_title = "" %}
+{% set meta_description = "" %}
+{% set meta_og_image = "" %} #}
+
+
+
+{% block wrapper %}
+
+  {% set n = {
+    type: 'sticky',
+    theme: 'dark'
+  } %}
+  {{ navigation.d(n) }}
+
+  {% set h1 = {
+    title: 'Some Example Feature',
+    body: 'Subtitle 1',
+    alt: 'Hello there my dear friend',
+    theme: 'fuchsia'
+  } %}
+  {{ hero.d(h1) }}
+
+  {% set m1 = {
+    title: 'Some Example Feature',
+    body: 'Subtitle 1',
+    image: 'https://newsio.com/img/product/da/send-to-team.png',
+    alt: 'Hello there my dear friend'
+  } %}
+  {{ moduleSimple.d(m1) }}
+
+  {% set m2 = {
+    title: 'Some cool Feature',
+    body: 'Subtitle 1',
+    image: 'https://newsio.com/img/product/da/send-to-team.png',
+    alt: 'Hello there my dear friend',
+    theme: 'grey',
+    flip: true
+  } %}
+  {{ moduleSimple.d(m2) }}
+
+  {% set m3 = {
+    title: 'Some Example Feature',
+    body: 'Subtitle 1',
+    image: 'https://newsio.com/img/product/da/send-to-team.png',
+    alt: 'Hello there my dear friend'
+  } %}
+  {{ moduleSimple.d(m3) }}
+
+  {% set m4 = {
+    label: 'Some Example Feature',
+    subtitle: 'Subtitle 1'
+  } %}
+  {{ moduleCta.d(m4) }}
+
 {% endblock %}
