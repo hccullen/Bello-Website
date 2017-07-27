@@ -1,0 +1,16 @@
+{% macro d(data) %}
+
+<div class="module module--small module--cta theme-{{data.theme|default('fuchsia')}}">
+  <div class="container">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12">
+        {% include 'partials/global/form--lead.nunjucks' %}
+        <h5>{{data.subtitle|default('Or Download the App')}}</h5>
+        <a data-vendor="apple" class="action apple" href="https://itunes.apple.com/us/app/snapchat/id447188370?mt=8">Download on the App Store</a>
+        <a data-vendor="google" class="action google" href="https://itunes.apple.com/us/app/snapchat/id447188370?mt=8">Download on the App Store</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

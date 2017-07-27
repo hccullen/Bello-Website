@@ -3,8 +3,10 @@
   background-color: $theme-primary;
   color: $white;
   border-color: darken($theme-primary,12%);
-  a {
+  h1, h2, a {
     color: $white;
+  }
+  a {
     text-decoration: underline;
   }
 }

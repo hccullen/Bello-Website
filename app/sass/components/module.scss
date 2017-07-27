@@ -1,0 +1,87 @@
+/* MODULE */
+.module {
+  padding: 4rem 0 6rem;
+  &.module--small {
+    padding: 3rem 0;
+  }
+  overflow: hidden;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  @media screen and (min-width: 48em) {
+   padding: 6rem 0;
+    &.module--small {
+      padding: 3rem 0;
+    }
+  }
+  @media screen and (min-width: 64em) {
+   padding: 8rem 0;
+    &.module--small {
+      padding: 4rem 0;
+    }
+  }
+
+  .module__image {
+    position: relative;
+    margin-bottom: -50%;
+    @media screen and (min-width: 48em) {
+      padding-left: 2em;
+      margin-right: -50%;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 64em) {
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .reverse .module__image {
+    position: relative;
+    margin-right: 0;
+    margin-left: -50%;
+    @media screen and (min-width: 48em) {
+      padding-right: 2em;
+    }
+    @media screen and (min-width: 64em) {
+      margin-left: 0;
+    }
+  }
+}
+
+/* SPECIFIC MODULES */
+.module--cta {
+  label {
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    @media screen and (min-width: 48em) {
+      font-size: 2.369rem;
+    }
+  }
+  .form__lead-field {
+    margin: 0 auto;
+  }
+  h5 {
+    margin: 2em 0 1em;
+    opacity: 0.9;
+  }
+
+  .action {
+    width: 7.4em;
+    height: 2.2em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    text-indent: -1000em;
+    overflow: hidden;
+    margin: 0 0.5em;
+    &.apple {
+    background-image: url(https://www.snapchat.com/static/style-guide/download/apple.svg);
+    }
+    &.google {
+    background-image: url(https://www.snapchat.com/static/style-guide/download/google.svg);
+    }
+  }
+
+}

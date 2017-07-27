@@ -47,9 +47,9 @@
   button.submit {
     display: block;
     flex-grow:1;
-    min-width: 5rem;
+    min-width: 6rem;
     height: 3rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     vertical-align: middle;
     text-transform: uppercase;
     color: #fff;
@@ -61,6 +61,7 @@
     cursor: pointer;
     @media screen and (min-width: 24em) {
      font-size: 0.85rem;
+     padding: 0 1rem;
     }
   }
 }
