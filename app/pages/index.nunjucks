@@ -1,0 +1,6 @@
+<!-- index.nunjucks -->
+{% extends "layouts/base.nunjucks" %}
+
+{% block content %}
+HELLO THERE
+{% endblock %}

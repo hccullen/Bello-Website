@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description|default('Newsio takes the stress out of team communication so you can focus on work rather than just talking about work. It brings group chat, file-sharing, and employee advocacy into a single platform.')}}">
+
+    <title>{{meta_title|default('Group messaging for busy teams')}} &ndash; Bello</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+
+    <!-- Theme CSS -->
+    <link href="/css/bello.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png?v=M4olQwanLb">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png?v=M4olQwanLb">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png?v=M4olQwanLb">
+    <link rel="manifest" href="/img/icons/manifest.json?v=M4olQwanLb">
+    <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg?v=M4olQwanLb" color="#eb1564">
+    <link rel="shortcut icon" href="/img/icons/favicon.ico?v=M4olQwanLb">
+    <meta name="apple-mobile-web-app-title" content="Newsio">
+    <meta name="application-name" content="Newsio">
+    <meta name="msapplication-config" content="/img/icons/browserconfig.xml?v=M4olQwanLb">
+    <meta name="theme-color" content="#1e1f3c">
+
+    <meta property="og:title" content="{{meta_title|default('Team messaging for businesses')}} &ndash; Newsio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://newsio.com/" />
+    <meta property="og:image" content="{{meta_og_image|default('https://newsio.com/img/icons/op-image-newsio.png')}}" />
+    <meta property="og:description" content="{{meta_description|default('Newsio takes the stress out of team communication so you can focus on work rather than just talking about work. It brings group chat, file-sharing, and employee advocacy into a single platform.')}}" />
+    <meta property="og:logo" content="https://newsio.com/img/icons/newsio-logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@newsiodotcom" />
+    <meta name="twitter:title" content="{{meta_title|default('Team messaging for businesses')}} &ndash; Newsio" />
+    <meta name="twitter:description" content="{{meta_description|default('Newsio takes the stress out of team communication so you can focus on work rather than just talking about work. It brings group chat, file-sharing, and employee advocacy into a single platform.')}}" />
+    <meta name="twitter:image" content="{{meta_og_image|default('https://newsio.com/img/icons/op-image-newsio.png')}}" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K93D8T');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K93D8T"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% include 'partials/global/navigation.nunjucks' %}
+    {% block content %}
+
+
+    {% endblock %}
+
+    <script src="/js/newsio.min.js" defer></script>
+
+</body>
+
+</html>
