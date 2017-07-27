@@ -8,7 +8,7 @@
 
 .nav__container {
   display: flex;
-  max-width: calc(1170px - 4em);
+  // max-width: calc(1170px - 4rem);
   margin: 0 auto;
   justify-content: space-between;
   >nav>ul {
@@ -24,11 +24,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4em;
+  height: 4rem;
 }
-.nav-prerender {
-  height: 4em;
+.nav-fixed-prerender {
+  height: 4rem;
   width: 100%;
+}
+.nav-sticky-prerender {
+  display: none;
 }
 
 .nav__ul {
@@ -36,6 +39,7 @@
   max-width: 700px;
   >li {
     display: flex;
+    margin: 0;
   }
   @media screen and (max-width: 700px) {
     display: block;
@@ -53,10 +57,12 @@
   text-decoration: none;
   font-weight: 400;
   font-size: 1.2rem;
+  line-height: 1;
+  margin: 0;
   transition: 200ms;
   padding: 1rem 0;
   &.nav__cta {
-    margin: .8em 1em;
+    margin: .8rem 1rem;
     padding: 0.7rem 1rem;
     border-radius:500px;
   }
@@ -82,6 +88,7 @@
 .nav__brand {
   width: 118px;
   height: 36px;
+  margin: 0;
   @media screen and (max-width: 1200em) {
     margin-left: 1rem;
   }
