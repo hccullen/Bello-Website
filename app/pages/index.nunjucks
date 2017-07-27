@@ -2,8 +2,10 @@
 {% extends "layouts/base.nunjucks" %}
 {% import 'components/global/navigation.nunjucks' as navigation %}
 {% import 'components/hero--normal.nunjucks' as hero %}
-{% import 'components/module--simple.nunjucks' as moduleSimple %}
-{% import 'components/module--cta.nunjucks' as moduleCta %}
+{% import 'components/modules/module--simple.nunjucks' as moduleSimple %}
+{% import 'components/modules/module--comparison.nunjucks' as moduleComparison %}
+{% import 'components/modules/module--customers.nunjucks' as moduleCustomers %}
+{% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
 {# {% set meta_title = "" %}
 {% set meta_description = "" %}
@@ -28,6 +30,11 @@
   {{ hero.d(h1) }}
 
   {% set m1 = {
+    theme: 'grey'
+  } %}
+  {{ moduleCustomers.d(m1) }}
+
+  {% set m1 = {
     title: 'Some Example Feature',
     body: 'Subtitle 1',
     image: 'https://newsio.com/img/product/da/send-to-team.png',
@@ -36,11 +43,21 @@
   {{ moduleSimple.d(m1) }}
 
   {% set m2 = {
+    title: 'Compared to X',
+    subtitle: 'jhabsn dkj fhkasj fksdhfgjhsgkj hsafheruhg uihg n asi haifaikf hasifioshfikola jao jfdkla klwaf jfklfklasakska lsakjf ofid f nj jks',
+    theme: 'grey'
+  } %}
+  {{ moduleComparison.d(m2) }}
+
+
+
+
+  {% set m2 = {
     title: 'Some cool Feature',
     body: 'Subtitle 1',
     image: 'https://newsio.com/img/product/da/send-to-team.png',
     alt: 'Hello there my dear friend',
-    theme: 'grey',
+    theme: 'white',
     flip: true
   } %}
   {{ moduleSimple.d(m2) }}
@@ -49,7 +66,8 @@
     title: 'Some Example Feature',
     body: 'Subtitle 1',
     image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend'
+    alt: 'Hello there my dear friend',
+    theme: 'grey'
   } %}
   {{ moduleSimple.d(m3) }}
 

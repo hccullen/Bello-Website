@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
 
     <!-- Theme CSS -->
-    <link href="/css/bello.css" rel="stylesheet">
+    <link href="/css/bello.min.css" rel="stylesheet">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png?v=M4olQwanLb">

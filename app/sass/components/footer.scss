@@ -3,6 +3,7 @@
   padding: 2rem 1rem;
   text-align: center;
   border-top: 1px solid $gray-1;
+  background-color: $white;
   .col-sm-6 {
     padding: 0 1rem;
   }
@@ -34,7 +35,7 @@
   .logo {
     width: 118px;
     height: 36px;
-    margin: 1rem 1rem 1rem 0;
+    margin: 0 0 1rem 0;
     cursor: pointer;
     .logotype, .logomark {
       fill: rgba($theme-secondary, 0.54);
