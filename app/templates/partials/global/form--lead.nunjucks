@@ -1,5 +1,5 @@
 <form action="abc.php" method="POST" id="top-form" class="form--cta">
-  <label for="fieldEmail">{{data.label|default('Try it free today')}}</label>
+  <label for="fieldEmail">{{data.label | default('Try it free today') | safe}}</label>
   <span class="form__lead-field">
   <input name="leadEmail" type="email" placeholder="{{data.placeholder|default('Email Address')}}" required>
   <button type="submit" class="submit button--theme-{{data.button_theme|default('fuchsia')}}">{{data.cta|default('Get Started')}}</button>
