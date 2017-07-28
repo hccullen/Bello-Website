@@ -17,9 +17,25 @@
   } %}
   {{ navigation.d(n) }}
 
+  <h1><small>Introducing </small><br />Bello</h1>
 
   {% set m1 = {
-    theme: 'grey'
+    theme: 'grey',
+    title: 'Conversations',
+    subtitle: 'It\'s what group messaging would look like if it were invented today.',
+    body: '',
+    border: mini
+  } %}
+  {{ tourSimple.d(m1) }}
+
+
+  {% set m1 = {
+    theme: 'grey',
+    title: 'Home Feed',
+    subtitle: 'Getting an overview of all your messages has never been easier.',
+    body: '',
+    flip: true,
+    border: mini
   } %}
   {{ tourSimple.d(m1) }}
 

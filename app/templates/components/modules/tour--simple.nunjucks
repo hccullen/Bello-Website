@@ -1,17 +1,24 @@
 {% macro d(data) %}
 
-<div class="module tour--conversations theme-{{data.theme|default('white')}}{% if data.noborder %} no-border{% endif %}">
+<div class="module tour--conversations theme-{{data.theme|default('white')}}{% if data.border == none %} no-border{% endif %}">
   <div class="container">
     <div class="row middle-xs{% if not data.flip %} reverse{% endif %}">
-      <div class="module__content col-xs-12 col-sm-8 col-md-7">
+      <div class="module__content col-xs-12 col-sm-6 col-md-5">
         <h2>{{data.title}}</h2>
-        <p>{{data.body|safe}}</p>
+        <p class="subtitle">{{data.subtitle}}</p>
+        <h4>New Topic, New Thread</h4>
+        <p>Stop getting lost in endless group chats. With Bello, you start a new thread for each conversation you start.</p>
+        <h4>New Topic, New Thread</h4>
+        <p>Stop getting lost in endless group chats. With Bello, you start a new thread for each conversation you start.</p>
+        {{data.body|safe}}
       </div>
-      <div class="module__image col-xs-12 col-sm-6 col-md-5">
+      <div class="module__image col-xs-12 col-sm-6">
         <img src="{{data.image}}" alt="{{data.alt}}">
       </div>
     </div>
+
   </div>
 </div>
+{% if data.border == mini %}<div class="container"><hr class="module__mini-border theme-{{data.theme|default('white')}}"></div>{% endif %}
 
 {% endmacro %}
