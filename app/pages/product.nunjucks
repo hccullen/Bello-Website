@@ -1,0 +1,34 @@
+<!-- index.nunjucks -->
+{% extends "layouts/base.nunjucks" %}
+{% import 'components/global/navigation.nunjucks' as navigation %}
+{% import 'components/modules/tour--simple.nunjucks' as tourSimple %}
+{% import 'components/modules/module--cta.nunjucks' as moduleCta %}
+
+{# {% set meta_title = "" %}
+{% set meta_description = "" %}
+{% set meta_og_image = "" %} #}
+
+
+
+{% block wrapper %}
+
+  {% set n = {
+    type: 'fixed'
+  } %}
+  {{ navigation.d(n) }}
+
+
+  {% set m1 = {
+    theme: 'grey'
+  } %}
+  {{ tourSimple.d(m1) }}
+
+
+  {% set m4 = {
+    label: 'Some Example Feature',
+    subtitle: 'Subtitle 1',
+    button_theme: 'green'
+  } %}
+  {{ moduleCta.d(m4) }}
+
+{% endblock %}

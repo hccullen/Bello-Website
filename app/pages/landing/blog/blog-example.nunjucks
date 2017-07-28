@@ -1,13 +1,15 @@
 <!-- privacy.nunjucks -->
-{% extends "layouts/other/docs.nunjucks" %}
+{% extends "layouts/other/fake-blog.nunjucks" %}
 
 {% set meta_title = "Privacy Policy" %}
-{% set title = "Privacy Policy" %}
 {# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
+{% set title = "Privacy Policy" %}
+{% set main_image = "https://im.ages.io/NKrigl4?width=1000&height=500" %}
+
 {% block content %}
-<h5>Last updated: 28 July 2017</h5>
+
 <h2>The Basics</h2>
 <p>Bello will collect certain non-personally identifiable information about you as you use our sites. We may use this data to better understand our users. We can also publish this data, but the data will be about a large group of users, not individuals. We may also collect certain personal information about you and your use of the Service (as defined herein) which may be published and used in the aggregate as set forth in this Privacy Policy.</p>
 <p>We will also ask you to provide personal information, but you'll always be able to opt out. If you give us personal information, we won't do anything evil with it.</p>
@@ -23,6 +25,15 @@
 <p>Bello also collects potentially personally-identifying information like Internet Protocol (IP) addresses. Bello does not use such information to identify its visitors, however, and does not disclose such information, other than under the same circumstances that it uses and discloses personally-identifying information, as described below. We may also collect and use IP addresses to block users who violate our Terms of Service.</p>
 <h2>Gathering of Personally-Identifying Information</h2>
 <p>Certain visitors to Bello's websites choose to interact with Bello in ways that require Bello to gather personally-identifying information. The amount and type of information that Bello gathers depends on the nature of the interaction. Bello collects such information only insofar as is necessary or appropriate to fulfill the purpose of the visitor's interaction with Bello. Bello does not disclose personally-identifying information other than as described below. And visitors can always refuse to supply personally-identifying information, with the caveat that it may prevent them from engaging in certain Service-related activities.</p>
+
+{% set m4 = {
+  label: 'Some Example Feature',
+  subtitle: 'Subtitle 1',
+  button_theme: 'fuchsia',
+  hideapps: false
+} %}
+{{ blockCta.d(m4) }}
+
 <h2>Aggregated Statistics and Third Party Analytics Providers</h2>
 <p>Bello may collect statistics about the behavior of visitors to and users of the Service. For instance, Bello may monitor the most popular parts of the Bello Site. Bello may display this information in the aggregate publicly or provide it to others.</p>
 <p>In addition, Bello may, from time to time, collect certain personal information from you, your use of the Services, and/or the users of your website, such as your user churn rate, your financial data and revenue, your conversation rates and other metrics (your &ldquo;Data&rdquo;). Bello may publish and display your Data in the aggregate to the public through our Site or on our blog, e.g. by publishing a report on average churn rates on the Site. However, all Data is only used and published in the aggregate which means that any published Data will not identify you, your company or your users, or link you to the published information in any way. If you wish to opt out of the publication of your Data, please contact us as <a href="mailto:hello@belloforwork.com">hello@belloforwork.com</a>.</p>

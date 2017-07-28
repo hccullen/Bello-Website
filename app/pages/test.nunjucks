@@ -6,7 +6,6 @@
 {% import 'components/modules/module--comparison.nunjucks' as moduleComparison %}
 {% import 'components/modules/module--customers.nunjucks' as moduleCustomers %}
 {% import 'components/block/block--cta.nunjucks' as blockCta %}
-{% import 'components/modules/module--press.nunjucks' as modulePress %}
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
 {# {% set meta_title = "" %}
@@ -24,21 +23,14 @@
   {{ navigation.d(n) }}
 
   {% set h1 = {
-    title: 'Better group messaging for busy teams.',
-    body: 'No more frustrating email threads or endless group chats. Bello is a headache-free messaging app for the modern team.',
+    title: 'Some Example Feature',
+    body: 'Subtitle 1',
     alt: 'Hello there my dear friend',
-    label: 'Try it <strong>FREE</strong> today',
     theme: 'fuchsia',
     button_theme: 'green'
   } %}
   {{ hero.d(h1) }}
 
-  {% set m1 = {
-    theme: 'fuchsia',
-    noborder: true
-  } %}
-  {{ modulePress.d(m1) }}
-{#
   {% set m1 = {
     title: 'Some Example Feature',
     body: 'Subtitle 1',
@@ -85,6 +77,6 @@
     subtitle: 'Subtitle 1',
     button_theme: 'green'
   } %}
-  {{ moduleCta.d(m4) }} #}
+  {{ moduleCta.d(m4) }}
 
 {% endblock %}
