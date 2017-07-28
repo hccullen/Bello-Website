@@ -78,3 +78,21 @@
     }
   }
 }
+
+.button--download {
+  width: 7.4em;
+  height: 2.2em;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  text-indent: -1000em;
+  overflow: hidden;
+  margin: 0 0.5em;
+  &.apple {
+  background-image: url(https://www.snapchat.com/static/style-guide/download/apple.svg);
+  }
+  &.google {
+  background-image: url(https://www.snapchat.com/static/style-guide/download/google.svg);
+  }
+}
