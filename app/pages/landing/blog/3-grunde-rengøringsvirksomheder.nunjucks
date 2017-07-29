@@ -1,0 +1,49 @@
+<!-- privacy.nunjucks -->
+{% extends "layouts/other/fake-blog.nunjucks" %}
+
+{% set meta_title = "3 Grunde til at rengøringsvirksomheder bruger Bello" %}
+{# {% set meta_description = "" %}
+{% set meta_og_image = "" %} #}
+
+{% set title = "3 Grunde til at rengøringsvirksomheder bruger Bello" %}
+{% set main_image = "/img/landing/blog/cleaning.png" %}
+{% set alt = "A photograph of someone using the Bello app on iPhone." %}
+
+
+{% block navigation %}
+  {% set n = {
+    language: 'da'
+  } %}
+  {{ navigation.d(n) }}
+{% endblock %}
+
+
+{% block content %}
+
+<p>Mange reng&oslash;ringsvirksomheder bruger i dag sms og email til at kommunikere internt. Faktisk viser vores unders&oslash;gelse, at hele 85% bruger SMS og email som deres prim&aelig;re kommunikationsv&aelig;rkt&oslash;j. </p>
+<p>Det kan m&aring;ske v&aelig;re sv&aelig;rt at forestille sig, at der skulle v&aelig;re en bedre m&aring;de at f&aring; organiseret sin virksomhed p&aring;. Men hvad hvis jeg sagde, at 96% af virksomhederne der bruger Bello, f&oslash;ler at de er blevet mere produktive. Hele 84% synes det er nemmere og hurtigere at f&aring; fat p&aring; deres kollegaer og sidst men ikke mindst f&oslash;ler 67% at de har f&aring;et et bedre f&aelig;llesskab med deres kollegaer. Dette kan lyde som h&oslash;je tal, for noget s&aring; simpelt som en app hvor man kan kommunikere, men lad mig uddybe her:</p>
+<h3>Mere Produktive</h3>
+<p>Jeg skriver med Lars p&aring; SMS, Nikolaj p&aring; Facebook Messenger og Sanne p&aring; E-mail - og hvor var det nu lige at jeg havde gemt kontrakten til den nye ordre henne? Det kan v&aelig;re sv&aelig;rt at finde filer og kontaktinfo p&aring; dine kollega, n&aring;r alle er spredt ud p&aring; forskellige systemer. </p>
+<p>P&aring; Bello har du alle dine kollegaer et klik v&aelig;k. Om du skal sende en opdatering p&aring; en ny kunde, om Karl ikke tage en ekstra vinduesrens med eller at der er sommerfest n&aelig;ste m&aring;ned, s&aring; g&oslash;r Bello det nemt og hurtigt. Du kan dele sm&aring; hurtige sp&oslash;rgsm&aring;l, l&aelig;ngere opdateringer, billeder af f&aelig;rdigt arbejde eller en PDF med den nye XXXXXX. </p>
+<p>Email og SMS er ikke bygget til arbejde, derfor har vi lavet en app, der fokuserer p&aring; arbejde, s&aring; man kan forblive fokuseret p&aring; det, som er vigtigt. </p>
+<h3>F&aring; fat i Alle</h3>
+<p>Med kommunikation spredt p&aring; flere forskellige platforme, kan det g&oslash;re det v&aelig;re sv&aelig;rt at f&aring; fat i alle. Man skal huske at tjekke flere forskellige platforme, og man har ikke et centralt sted, hvor alle ens kollegaer er samlet. N&aring;r du st&aring;r og skal sende billeder af det f&aelig;rdige arbejde til en gruppe af mennesker, skal du huske at tilf&oslash;je hver enkelt person. Med Bello kan du nemt oprette grupper, s&aring; du kan sende beskeder til flere personer p&aring; en gang - opret gruppen &eacute;n gang og du har den for altid.</p>
+<h3>En for alle og alle for en</h3>
+<p>Mange vil sige, at det er kulturen i en virksomhed, der netop g&oslash;r den unik. Alle kan blive enige om, at f&aelig;llesskabet er virkelig vigtigt for ens lyst til at m&oslash;de p&aring; arbejde, ens arbejdsindsats og XXXXXXXXXX.</p>
+<p>Det er nemt at opretholde et f&aelig;llesskab, hvis alle sidder p&aring; samme kontor og g&aring;r op ad hinanden dagen lang. Men n&aring;r man som reng&oslash;ringsassistent bev&aelig;ger sig rundt i l&oslash;bet af dagen, har flere kollegaer p&aring; forskellige opgaver, s&aring; kan det v&aelig;re sv&aelig;rt at dele succeser, sp&oslash;rgsm&aring;l og det gode arbejde.</p>
+<p>S&aring; hvorfor er det, at vi ikke har en m&aring;de at skabe et f&aelig;llesskab p&aring;, for virksomheder som ikke sidder klistret til et skrivebord. Det har vi sat os for at &aelig;ndre p&aring; i Bello og det er en opgave vi arbejder p&aring; l&oslash;bende. For f&aelig;llesskab og kollegaer er det, der g&oslash;r en virksomhed til det den er.</p>
+<p>Konklusion</p>
+<p>Vi tror p&aring;, at vi kan forbedre hverdagen for reng&oslash;ringsvirksomheder rundt omkring i Danmark, ved at have udviklet en app, der g&oslash;r det s&aring; nemt og hurtigt at dele viden, sp&oslash;rgsm&aring;l og succeser med dine kollegaer.</p>
+<p>Appen er gjort gratis s&aring; alle kan v&aelig;re med, men s&aring; vil du nok ogs&aring; gerne vide hvordan vi tjener penge og det er egentlig ret simpelt. Vi har den gratis version, men s&aring; har vi ogs&aring; en betalt version og det er der to grunde til 1. fordi vi ikke tror p&aring; at vi skal videres&aelig;lge jeres data til andre virksomheder, for jeres kommunikation h&oslash;rer kun til i jeres virksomhed og 2. Vi vil ikke forstyrre jeres arbejde med reklamer, som g&oslash;r at folk lige pludselige glemmer det vigtige og fokusere p&aring; et tilbud fra 3. virksomhed.</p>
+{% set m4 = {
+  label: 'Prøv det gratis idag!',
+  subtitle: 'Subtitle 1',
+  button_theme: 'fuchsia',
+  cta: 'Kom i gang Gratis',
+  placeholder: 'Emailadresse',
+  hideapps: false
+} %}
+{{ blockCta.d(m4) }}
+
+
+{% endblock %}

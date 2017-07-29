@@ -1,0 +1,75 @@
+<!-- index.nunjucks -->
+{% extends "layouts/base.nunjucks" %}
+{% import 'components/global/navigation.nunjucks' as navigation %}
+{% import 'components/block/block--title.nunjucks' as title %}
+{% import 'components/modules/module--plans.nunjucks' as modulePlans %}
+{% import 'components/modules/module--cta.nunjucks' as moduleCta %}
+
+
+{# {% set meta_title = "" %}
+{% set meta_description = "" %}
+{% set meta_og_image = "" %} #}
+
+
+
+{% block wrapper %}
+
+  {% set n = {
+    type: 'fixed',
+    language: 'da'
+  } %}
+  {{ navigation.d(n) }}
+
+  {% set n = {
+    pretitle: 'Priser',
+    title: 'Fixed Prices. Zero Surprises.',
+    subtitle: 'Probably just a small subtitle here explaining our fixed price structure, because it’s pretty awesome for businesses. Trust me.'
+  } %}
+  {{ title.d(n) }}
+
+
+    {% set data = {
+      bottom: true
+    } %}
+    {% set p1 = {
+      title1: 'Gratis',
+      title2: 'For Evigt',
+      list: ['Up to 10 users','Limited Message History','1GB File Storage','Email Support'],
+      cta: 'Kom i Gang'
+    } %}
+    {% set p2 = {
+      title1: '10',
+      title2: 'Bruger',
+      list: ['Up to 10 users','Unlimited Messages','10GB File Storage','Email & Phone Support'],
+      cta: 'Prøv det Gratis',
+      total: 'Total',
+      value: '160kr',
+      period: "/md",
+      planType: 'premium'
+    } %}
+    {% set p3 = {
+      title1: '20',
+      title2: 'Bruger',
+      list: ['Up to 20 users','Unlimited Messages','20GB File Storage','Email & Phone Support'],
+      cta: 'Prøv det Gratis',
+      total: 'Total',
+      value: '350kr',
+      period: "md",
+      planType: 'premium',
+      featured: true
+    } %}
+    {% set p4 = {
+      title1: '50',
+      title2: 'Bruger',
+      list: ['Up to 10 users','Unlimited Messages','100GB File Storage','Email & Phone Support'],
+      cta: 'Prøv det Gratis',
+      total: 'Total',
+      value: '950kr',
+      period: "/md",
+      planType: 'premium'
+    } %}
+    {{ modulePlans.d(data,p1,p2,p3,p4) }}
+
+
+
+{% endblock %}

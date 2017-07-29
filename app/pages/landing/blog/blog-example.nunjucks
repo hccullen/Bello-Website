@@ -1,12 +1,12 @@
 <!-- privacy.nunjucks -->
 {% extends "layouts/other/fake-blog.nunjucks" %}
 
-{% set meta_title = "Privacy Policy" %}
+{% set meta_title = "3 Grunde til at ejendomsmæglere bruger Bello" %}
 {# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
-{% set title = "Privacy Policy" %}
-{% set main_image = "https://im.ages.io/NKrigl4?width=1000&height=500" %}
+{% set title = "3 Grunde til at ejendomsmæglere bruger Bello" %}
+{% set main_image = "/img/landing/blog/real-estate.png" %}
 
 {% block content %}
 

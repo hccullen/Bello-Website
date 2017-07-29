@@ -19,8 +19,7 @@
 
   {% set n = {
     type: 'sticky',
-    theme: 'light',
-    language: 'da'
+    theme: 'light'
   } %}
   {{ navigation.d(n) }}
 
@@ -28,14 +27,11 @@
     title: 'Nem og hurtig intern kommunikation til den travle mæglerforretning.',
     body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
     alt: 'Hello there my dear friend',
-    label: 'Prøv det <strong>GRATIS</strong> idag!',
+    label: 'Prøv det <strongGRATIS</strong> i dag!',
     theme: 'grey',
-    vertical: 'cleaning',
+    vertical: 'realestate',
     button_theme: 'fuchsia',
-    flip: true,
-    border: 'full',
-    placeholder: 'Emailadresse',
-    cta: 'Kom i gang gratis'
+    flip: true
   } %}
   {{ hero.d(h1) }}
 
@@ -49,10 +45,22 @@
     title: 'Samarbejd som et team',
     body: 'Har du brug for at få en til at tage et åbent hus for dig? Har du brug for en second opinion på en kontrakt? Med Bello er dine kollega et enkelt klik væk.</p><p>Men det hele skal ikke bare være effektivt. Derfor har vi også gjort Bello til et sted hvor du kan dele dine succeser og spørgsmål med dine kollegaer.',
     image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend',
-    border: 'mini'
+    alt: 'Hello there my dear friend'
   } %}
   {{ moduleSimple.d(m1) }}
+  {% set m1 = {
+    theme: 'grey'
+  } %}
+  {{ moduleCustomers.d(m1) }}
+
+  {% set m2 = {
+    title: 'Compared to X',
+    subtitle: 'jhabsn dkj fhkasj fksdhfgjhsgkj hsafheruhg uihg n asi haifaikf hasifioshfikola jao jfdkla klwaf jfklfklasakska lsakjf ofid f nj jks',
+    theme: 'white'
+  } %}
+  {{ moduleComparison.d(m2) }}
+
+
 
 
   {% set m2 = {
@@ -61,31 +69,23 @@
     image: 'https://newsio.com/img/product/da/post-with-notification.png',
     alt: 'Hello there my dear friend',
     theme: 'white',
-    flip: true,
-    border: 'mini'
+    flip: true
   } %}
   {{ moduleSimple.d(m2) }}
 
-  {% set m1 = {
-    title: 'Slut med dokumenter over det hele!',
-    body: 'Papirarbejde og dokumenter kan ofte være besværligt, men Bello hjælper dig med at finde de rette dokumenter til hver enkelt bolig samlet ét sted.</p><p>Det betyder ikke noget om det er et Word dokument, PDF eller et billede, du kan nemt dele filer til enkelte kollegaer eller hele teams. Det kunne ikke blive nemmere.',
-    image: 'https://newsio.com/img/product/documents-upload.svg',
-    alt: 'Hello there my dear friend'
+  {% set m3 = {
+    title: 'Some Example Feature',
+    body: 'Subtitle 1',
+    image: 'https://newsio.com/img/product/da/send-to-team.png',
+    alt: 'Hello there my dear friend',
+    theme: 'grey'
   } %}
-  {{ moduleSimple.d(m1) }}
-
-  {% set c1 = {
-    theme: 'grey',
-    title: 'Mød vores Kunder'
-  } %}
-  {{ moduleCustomers.d(c1) }}
+  {{ moduleSimple.d(m3) }}
 
   {% set m4 = {
-    label: 'Prøv det gratis idag!',
-    subtitle: 'Eller hent app\'en',
-    button_theme: 'green',
-    placeholder: 'Emailadresse',
-    cta: 'Kom i gang gratis'
+    label: 'Some Example Feature',
+    subtitle: 'Subtitle 1',
+    button_theme: 'green'
   } %}
   {{ moduleCta.d(m4) }}
 
