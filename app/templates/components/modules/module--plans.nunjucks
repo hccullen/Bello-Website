@@ -1,37 +1,29 @@
-{% macro d(data) %}
+{% macro d(data,p1,p2,p3,p4,p5) %}
 
-<div class="module module--mini theme-{{data.theme|default('white')}}{% if data.border == 'none' %} no-border{% endif %}{% if data.bottom %} bottom-padding{% endif %}">
+<div class="module module--mini theme-{{data.theme|default('grey')}} border-{{data.border|default('full')}}{% if data.bottom %} bottom-padding{% endif %}">
   <div class="container">
     <div class="row between-md">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block--price-plan">
-          <h2 class="plan__name">Free<br /><small>Forever</small></h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block--price-plan plan--premium">
-          <h2 class="plan__name">10<br /><small>Users</small></h2>
+
+      {% for plan in [p1,p2,p3,p4] %}
+      <div class="col-xs-12 col-sm-6 col-md">
+        <div class="block--price-plan{{' plan--premium' if plan.planType == 'premium'}}{{' plan--featured' if plan.featured}}">
+          <h2 class="plan__name">{{plan.title1}}<br /><small>{{plan.title2}}</small></h2>
+          <ul>
+            {% for list in plan.list %}
+              <li>{{list}}</li>
+            {% endfor %}
+          </ul>
           <div class="plan__footer">
-            BUY NOW
+            {% if plan.value %}
+              <span class="price__total">{{plan.total}}</span>
+              <span class="price__value">{{plan.value}}<span class="price__period">{{plan.period}}</span></span>
+            {% endif %}
+            <button type="button" name="button">{{plan.cta}}</button>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block--price-plan plan--featured plan--premium">
-          <h2 class="plan__name">20<br /><small>Users</small></h2>
-          <div class="plan__footer">
-            BUY NOW
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block--price-plan plan--premium">
-          <h2 class="plan__name">50<br /><small>Users</small></h2>
-          <div class="plan__footer">
-            BUY NOW
-          </div>
-        </div>
-      </div>
+      {% endfor %}
+
     </div>
   </div>
 </div>

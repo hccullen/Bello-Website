@@ -27,15 +27,47 @@
   {{ title.d(n) }}
 
 
-    {% set m4 = {
-      label: 'FREE',
-      subtitle: 'Subtitle 1',
-      button_theme: 'fuchsia',
-      theme: 'grey',
-      border: 'none',
+    {% set data = {
       bottom: true
     } %}
-    {{ modulePlans.d(m4) }}
+    {% set p1 = {
+      title1: 'Free',
+      title2: 'Forever',
+      list: ['Up to 10 users','Limited Message History','1GB File Storage','Email Support'],
+      cta: 'Get Started'
+    } %}
+    {% set p2 = {
+      title1: '10',
+      title2: 'Users',
+      list: ['Up to 10 users','Unlimited Messages','10GB File Storage','Email & Phone Support'],
+      cta: 'Try it Free',
+      total: 'Total',
+      value: '$25',
+      period: "/mth",
+      planType: 'premium'
+    } %}
+    {% set p3 = {
+      title1: '20',
+      title2: 'Users',
+      list: ['Up to 20 users','Unlimited Messages','20GB File Storage','Email & Phone Support'],
+      cta: 'Try it Free',
+      total: 'Total',
+      value: '$55',
+      period: "/mth",
+      planType: 'premium',
+      featured: true
+    } %}
+    {% set p4 = {
+      title1: '50',
+      title2: 'Users',
+      list: ['Up to 10 users','Unlimited Messages','100GB File Storage','Email & Phone Support'],
+      cta: 'Try it Free',
+      total: 'Total',
+      value: '$150',
+      period: "/mth",
+      planType: 'premium'
+    } %}
+    {{ modulePlans.d(data,p1,p2,p3,p4) }}
 
 
 

@@ -25,8 +25,7 @@
 }
 
 .block--price-plan {
-  margin: 2em 0.5em 0;
-  min-height: 400px;
+  margin: 2em 0 0;
   border-radius: 1rem;
   background-color: $white;
   box-shadow: 0px 2px 4px 0px rgba($theme-secondary,0.12);
@@ -35,8 +34,24 @@
   padding: 1.75rem;
   border: 0.25rem solid $white;
   position: relative;
+  @media screen and (min-width: 48em) {
+   margin: 2em 0.5em 0;
+  }
+  ul {
+    margin: 2rem 0;
+    list-style-type: none;
+    li {
+      margin: 0.5rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
   &.plan--featured {
     border-color: $theme-primary;
+    button {
+        @include theme-fuchsia;
+        border: none;
+    }
   }
   &.plan--premium {
     &::before {
@@ -65,14 +80,41 @@
       font-size: 0.5em;
     }
   }
+  .price__total {
+    color: $gray-2;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    font-size: $body-font-size;
+  }
+  .price__value {
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    font-size: $h2-font-size;
+    margin: 0.5rem 0 1rem;
+    .price__period {
+      font-weight: 400;
+      text-align: center;
+      font-size: $h4-font-size;
+      opacity: 0.8;
+      margin-left: 0.25em;
+
+    }
+  }
+
   .plan__footer {
-    position: absolute;
-    bottom: -.25rem;
-    left: -.25rem;
-    right: -.25rem;
-    height: 100px;
+    margin: 1rem -2rem -2rem;
     border-radius: 0 0 1rem 1rem;
     border-top: 1px solid $gray-1;
     background-color: rgba($theme-secondary,0.02);
+    padding:1rem;
+  }
+  button {
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid $theme-primary;
+    color: $theme-primary;
   }
 }
