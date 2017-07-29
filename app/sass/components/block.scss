@@ -1,9 +1,78 @@
-.block--cta {
+.block--well  {
   border-radius: 8px;
   padding: 2em 0;
+  margin: 1em auto;
   border-width: 1px;
   border-style: solid;
+}
+.block--cta {
   .form__lead-field {
     margin: 0 auto;
+  }
+}
+
+.block--title {
+  h1 {
+    margin-top: 0;
+    line-height: 1.2;
+
+    small {
+      margin-bottom:0;
+      font-size: $h4-font-size;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.block--price-plan {
+  margin: 2em 0.5em 0;
+  min-height: 400px;
+  border-radius: 1rem;
+  background-color: $white;
+  box-shadow: 0px 2px 4px 0px rgba($theme-secondary,0.12);
+  transition: box-shadow 0.2s ease;
+  box-sizing: border-box;
+  padding: 1.75rem;
+  border: 0.25rem solid $white;
+  position: relative;
+  &.plan--featured {
+    border-color: $theme-primary;
+  }
+  &.plan--premium {
+    &::before {
+      content: 'Premium';
+      text-transform: uppercase;
+      color: $white;
+      background-color: $theme-primary;
+      border-radius: 1rem 0 1rem 0;
+      position: absolute;
+      font-size: 0.8rem;
+      top: -.25rem;
+      left: -.25rem;
+      padding:0.5rem 1.25rem;
+      box-sizing: border-box;
+    }
+  }
+  h2.plan__name {
+    font-size: 3rem;
+    font-weight:900;
+    line-height: 0.7;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: $gray-8;
+    small{
+      font-size: 0.5em;
+    }
+  }
+  .plan__footer {
+    position: absolute;
+    bottom: -.25rem;
+    left: -.25rem;
+    right: -.25rem;
+    height: 100px;
+    border-radius: 0 0 1rem 1rem;
+    border-top: 1px solid $gray-1;
+    background-color: rgba($theme-secondary,0.02);
   }
 }

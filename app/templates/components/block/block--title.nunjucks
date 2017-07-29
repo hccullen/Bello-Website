@@ -1,0 +1,12 @@
+{% macro d(data) %}
+
+  <div class="container block--title theme-{{data.theme|default('none')}}">
+    <div class="row middle-xs center-xs">
+      <div class="col-xs-12 col-md-8">
+        <h1>{% if data.pretitle %}<small>{{data.pretitle}}</small><br />{% endif %}{{data.title}}</h1>
+        {% if data.subtitle %}<p>{{data.subtitle}}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}

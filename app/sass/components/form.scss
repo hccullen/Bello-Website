@@ -4,7 +4,7 @@
   .form__lead-field {
     width: 100%;
     margin: 0 auto;
-    max-width: 30rem;
+    max-width: 34rem;
     display: flex;
     flex-wrap: no-wrap;
     border-radius: 6px;
@@ -66,15 +66,24 @@
     &.button--theme-fuchsia {
       background-color: $theme-primary;
       color: $white;
+      &:hover, &:focus {
+        background-color: darken($theme-primary, 5%);
+      }
     }
 
     &.button--theme-green {
       background-color: darken(complement($theme-primary),5%);
       color: $white;
+      &:hover, &:focus {
+        background-color: darken(darken(complement($theme-primary),5%), 5%);
+      }
     }
     &.button--theme-orange {
       background-color: #ff9800;
       color: $white;
+      &:hover, &:focus {
+        background-color: darken(#ff9800, 5%);
+      }
     }
   }
 }

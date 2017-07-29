@@ -50,7 +50,7 @@
     @media screen and (min-width: 64em) {
       padding: 0;
       .hero__content__wrapper {
-        max-width:36rem;
+        max-width:40rem;
       }
     }
     .form--cta {
@@ -59,12 +59,9 @@
   }
 
   h1 {
-    font-size: 2.369em;
+    line-height: 1.2;
     font-weight: 900;
     margin-bottom: 0.5em;
-    @media screen and (min-width: 48em) {
-      font-size: 3.157em;
-    }
   }
   h3 {
     font-size: 1.25rem;

@@ -1,0 +1,42 @@
+<!-- index.nunjucks -->
+{% extends "layouts/base.nunjucks" %}
+{% import 'components/global/navigation.nunjucks' as navigation %}
+{% import 'components/block/block--title.nunjucks' as title %}
+{% import 'components/modules/module--plans.nunjucks' as modulePlans %}
+{% import 'components/modules/module--cta.nunjucks' as moduleCta %}
+
+
+{# {% set meta_title = "" %}
+{% set meta_description = "" %}
+{% set meta_og_image = "" %} #}
+
+
+
+{% block wrapper %}
+
+  {% set n = {
+    type: 'fixed'
+  } %}
+  {{ navigation.d(n) }}
+
+  {% set n = {
+    pretitle: 'Pricing',
+    title: 'Fixed Prices. Zero Surprises.',
+    subtitle: 'Probably just a small subtitle here explaining our fixed price structure, because it’s pretty awesome for businesses. Trust me.'
+  } %}
+  {{ title.d(n) }}
+
+
+    {% set m4 = {
+      label: 'FREE',
+      subtitle: 'Subtitle 1',
+      button_theme: 'fuchsia',
+      theme: 'grey',
+      border: 'none',
+      bottom: true
+    } %}
+    {{ modulePlans.d(m4) }}
+
+
+
+{% endblock %}

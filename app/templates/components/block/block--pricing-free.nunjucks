@@ -1,0 +1,19 @@
+{% macro d(data) %}
+
+  <div class="block block--well block--pricing-free theme-{{data.theme|default('white')}}">
+    <div class="row middle-xs">
+      <div class="col-xs-12">
+        <h3>FREE</h3>
+        <div class="row middle-xs">
+          <div class="col-xs-12 col-md-6">
+            <ul>
+              <li>Message Limit</li>
+              <li>Up to 10 users</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}

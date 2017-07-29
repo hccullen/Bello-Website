@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-<div class="module tour--conversations theme-{{data.theme|default('white')}}{% if data.border == none %} no-border{% endif %}">
+<div class="module tour--conversations theme-{{data.theme|default('grey')}}{% if data.border == none %} no-border{% endif %}">
   <div class="container">
     <div class="row middle-xs{% if not data.flip %} reverse{% endif %}">
       <div class="module__content col-xs-12 col-sm-6 col-md-5">

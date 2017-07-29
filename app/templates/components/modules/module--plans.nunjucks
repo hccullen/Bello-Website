@@ -1,0 +1,39 @@
+{% macro d(data) %}
+
+<div class="module module--mini theme-{{data.theme|default('white')}}{% if data.border == 'none' %} no-border{% endif %}{% if data.bottom %} bottom-padding{% endif %}">
+  <div class="container">
+    <div class="row between-md">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block--price-plan">
+          <h2 class="plan__name">Free<br /><small>Forever</small></h2>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block--price-plan plan--premium">
+          <h2 class="plan__name">10<br /><small>Users</small></h2>
+          <div class="plan__footer">
+            BUY NOW
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block--price-plan plan--featured plan--premium">
+          <h2 class="plan__name">20<br /><small>Users</small></h2>
+          <div class="plan__footer">
+            BUY NOW
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block--price-plan plan--premium">
+          <h2 class="plan__name">50<br /><small>Users</small></h2>
+          <div class="plan__footer">
+            BUY NOW
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

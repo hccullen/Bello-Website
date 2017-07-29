@@ -46,3 +46,18 @@
     color: rgba($theme-secondary,0.54);
   }
 }
+
+.theme-none {
+  background-color: transparent;
+  color: rgba($theme-secondary,0.8);
+  border-color: darken($white,12%);
+  h1, h2, a {
+    color: $theme-secondary;
+  }
+  .logo-svg {
+    fill: rgba($theme-secondary,0.54);
+  }
+  .muted {
+    color: rgba($theme-secondary,0.54);
+  }
+}

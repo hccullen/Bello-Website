@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-  <div class="block block--cta theme-{{data.theme|default('white')}}">
+  <div class="block block--well block--cta theme-{{data.theme|default('white')}}">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
         {% include 'partials/global/form--lead.nunjucks' %}

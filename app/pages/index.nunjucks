@@ -34,8 +34,7 @@
   {{ hero.d(h1) }}
 
   {% set m1 = {
-    theme: 'fuchsia',
-    noborder: true
+    theme: 'grey'
   } %}
   {{ modulePress.d(m1) }}
 {#
