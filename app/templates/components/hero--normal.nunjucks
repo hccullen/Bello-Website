@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-<div class="hero theme-{{data.theme|default('fuchsia')}}{% if data.vertical %} vertical {{data.vertical}}{% endif %}">
+<div class="hero theme-{{data.theme|default('fuchsia')}}{% if data.vertical %} vertical {{data.vertical}}{% endif %} border-{{data.border|default('none')}}">
   <div class="container">
     <div class="row middle-xs{% if not data.flip %} reverse{% endif %}">
       <div class="hero__content col-xs-12 col-sm-8 col-md-7">
@@ -30,4 +30,6 @@
     </div>
   </div>
 </div>
+{% if data.border == 'mini' %}<div class="container"><hr class="module__mini-border theme-{{data.theme|default('white')}}"></div>{% endif %}
+
 {% endmacro %}

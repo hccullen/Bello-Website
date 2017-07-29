@@ -1,9 +1,9 @@
 {% macro d(data) %}
 
-<div class="module theme-{{data.theme|default('white')}}{% if data.noborder %} no-border{% endif %}">
+<div class="module theme-{{data.theme|default('white')}} border-{{data.border|default('full')}}">
   <div class="container">
-    <div class="row middle-xs{% if not data.flip %} reverse{% endif %}">
-      <div class="module__content col-xs-12 col-sm-8 col-md-7">
+    <div class="row middle-xs between-md {% if not data.flip %} reverse{% endif %}">
+      <div class="module__content col-xs-12 col-sm-8 col-md-6">
         <h2>{{data.title}}</h2>
         <p>{{data.body|safe}}</p>
       </div>
@@ -13,5 +13,6 @@
     </div>
   </div>
 </div>
+{% if data.border == 'mini' %}<div class="container"><hr class="module__mini-border theme-{{data.theme|default('white')}}"></div>{% endif %}
 
 {% endmacro %}

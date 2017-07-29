@@ -1,8 +1,8 @@
 /* GENERAL THEME */
-.theme-fuchsia {
+@mixin theme-fuchsia {
   background-color: $theme-primary;
   color: $white;
-  border-color: darken($theme-primary,12%);
+  border-color: darken($theme-primary,6%);
   h1, h2, a {
     color: $white;
   }
@@ -16,8 +16,11 @@
     color: rgba($white,0.7);
   }
 }
+.theme-fuchsia {
+  @include theme-fuchsia;
+}
 
-.theme-grey {
+@mixin theme-grey {
   background-color: $gray-0;
   color: rgba($theme-secondary,0.8);
   border-color: darken($gray-0,12%);
@@ -32,7 +35,12 @@
   }
 }
 
-.theme-white {
+.theme-grey {
+  @include theme-grey;
+}
+
+
+@mixin theme-white {
   background-color: $white;
   color: rgba($theme-secondary,0.8);
   border-color: darken($white,12%);
@@ -47,7 +55,12 @@
   }
 }
 
-.theme-none {
+.theme-white {
+  @include theme-white;
+}
+
+
+ @mixin theme-none {
   background-color: transparent;
   color: rgba($theme-secondary,0.8);
   border-color: darken($white,12%);
@@ -60,4 +73,8 @@
   .muted {
     color: rgba($theme-secondary,0.54);
   }
+}
+
+.theme-none {
+  @include theme-none;
 }

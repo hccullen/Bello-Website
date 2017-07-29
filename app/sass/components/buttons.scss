@@ -1,0 +1,40 @@
+button {
+  display: block;
+  height: 3rem;
+  padding: 0 0.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  font-weight: 700;
+  cursor: pointer;
+  @media screen and (min-width: 24em) {
+   font-size: 0.85rem;
+   padding: 0 1rem;
+  }
+
+  &.button--theme-fuchsia {
+    background-color: $theme-primary;
+    color: $white;
+    &:hover, &:focus {
+      background-color: darken($theme-primary, 5%);
+    }
+  }
+
+  &.button--theme-green {
+    background-color: darken(complement($theme-primary),5%);
+    color: $white;
+    &:hover, &:focus {
+      background-color: darken(darken(complement($theme-primary),5%), 5%);
+    }
+  }
+  &.button--theme-orange {
+    background-color: #ff9800;
+    color: $white;
+    &:hover, &:focus {
+      background-color: darken(#ff9800, 5%);
+    }
+  }
+}

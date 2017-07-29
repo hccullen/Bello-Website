@@ -1,6 +1,7 @@
 /* MODULE */
 .module {
   padding: 4rem 0 6rem;
+  overflow: hidden;
   &.module--small {
     padding: 3rem 0;
   }
@@ -10,12 +11,11 @@
   &.bottom-padding {
     padding-bottom: 4rem;
   }
-  &.no-border {
-    border: none;
+  &.border-full {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
   }
-  overflow: hidden;
-  border-top-width: 1px;
-  border-top-style: solid;
+
   @media screen and (min-width: 48em) {
    padding: 6rem 0;
     &.module--small {

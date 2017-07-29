@@ -62,8 +62,6 @@
 
 
   {% set m4 = {
-    label: 'Some Example Feature',
-    subtitle: 'Subtitle 1',
     button_theme: 'green'
   } %}
   {{ moduleCta.d(m4) }}

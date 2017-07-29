@@ -1,9 +1,10 @@
 /* HERO LAYOUT */
 .hero {
-  box-shadow: 0 4px 6px rgba($theme-secondary,.12);
-  @media screen and (min-width: 48em) {
-   box-shadow: none;
+  &.border-full {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
   }
+  overflow: hidden;
   .row {
       padding-top: 7rem;
       height: auto;
@@ -37,7 +38,13 @@
   }
 
   &.realestate::after {
-    background-image: url(https://newsio.com/img/verticals/realestate.jpg);
+    background-image: url(/img/landing/realestate.jpg);
+  }
+  &.cleaning::after {
+    background-image: url(/img/landing/cleaning.jpg);
+  }
+  &.construction::after {
+    background-image: url(/img/landing/construction.jpg);
   }
 
   .hero__content {

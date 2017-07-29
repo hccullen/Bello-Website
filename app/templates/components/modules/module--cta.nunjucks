@@ -1,6 +1,6 @@
 {% macro d(data) %}
 
-<div class="module module--small module--cta theme-{{data.theme|default('fuchsia')}}{% if data.noborder %} no-border{% endif %}">
+<div class="module module--small module--cta theme-{{data.theme|default('fuchsia')}} border-{{data.border|default('full')}}">
   <div class="container">
     <div class="row middle-xs center-xs">
       <div class="col-xs-12">
@@ -12,5 +12,6 @@
     </div>
   </div>
 </div>
+{% if data.border == 'mini' %}<div class="container"><hr class="module__mini-border theme-{{data.theme|default('white')}}"></div>{% endif %}
 
 {% endmacro %}
