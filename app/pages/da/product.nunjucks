@@ -21,50 +21,69 @@
 
   {% set n = {
     pretitle: 'Introducing',
-    title: 'Bello'
+    title: 'Bello',
+    subtitle: 'Group Messaging for Busy Teams'
   } %}
   {{ title.d(n) }}
 
   {% set m1 = {
     title: 'Conversations',
     subtitle: 'It\'s what group messaging would look like if it were invented today.',
+    value1: {
+      title: 'New Topic. New Thread.',
+      body: 'Stop getting lost in endless group chats. With Bello, each conversation you start has its own chat thread so discussions stay focused.'
+    },
+    value2: {
+      title: 'More than just messages.',
+      body: 'Have discussions, send files, and share links with your team at the speed of light. Whether it\'s PDFs, pictures, or funny YouTube videos, we got you covered.'
+    },
     body: '',
+    video: '/img/product/conversations.mp4',
+    poster: '/img/product/conversations-poster.png',
     border: mini
   } %}
   {{ tourSimple.d(m1) }}
-
 
   {% set m1 = {
     title: 'Home Feed',
     subtitle: 'Getting an overview of all your messages has never been easier.',
-    body: '',
-    flip: true,
-    border: mini
+    value1: {
+      title: 'All in one place.',
+      body: 'You don\'t have to check six different places to get up-to-date. All your conversations are in your home feed.'
+    },
+    value2: {
+      title: 'Polite Notifications.',
+      body: 'Constant pings on your phone gets super annoying. Bello knows this, and won\'t disturb you unless it\'s relevant to you.'
+    },
+    video: '/img/product/home-feed.mp4',
+    poster: '/img/product/home-feed-poster.png',
+    border: mini,
+    flip: true
   } %}
   {{ tourSimple.d(m1) }}
 
   {% set m1 = {
-    title: 'Groups',
-    subtitle: 'It\'s what group messaging would look like if it were invented today.',
+    title: 'Collaboration',
+    subtitle: 'You decide how you want to work.',
+    value1: {
+      title: 'People or Groups. Or both.',
+      body: 'No need to create a new group each time you want to start a conversation with multiple people. Just select the recipients and start writing.'
+    },
+    value2: {
+      title: 'Add People Any Time.',
+      body: 'Suddenly realise you need to invite someone to the discussion. With Bello, you can add anyone to a conversation at any time.'
+    },
     body: '',
-    border: mini
-  } %}
-  {{ tourSimple.d(m1) }}
-
-
-  {% set m1 = {
-    title: 'Notifications',
-    subtitle: 'Getting an overview of all your messages has never been easier.',
-    body: '',
-    flip: true,
-    border: none
+    video: '/img/product/collaboration.mp4',
+    poster: '/img/product/collaboration-poster.png'
   } %}
   {{ tourSimple.d(m1) }}
 
 
   {% set m4 = {
-    label: 'Some Example Feature',
-    subtitle: 'Subtitle 1',
+    label: 'Prøv det gratis idag!',
+    subtitle: 'Eller hent app\'en',
+    cta: 'Kom i gang gratis',
     button_theme: 'green'
   } %}
   {{ moduleCta.d(m4) }}

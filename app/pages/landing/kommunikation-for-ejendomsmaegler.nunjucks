@@ -27,7 +27,7 @@
   {% set h1 = {
     title: 'Nem og hurtig intern kommunikation til den travle mæglerforretning.',
     body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
-    alt: 'Hello there my dear friend',
+    image: '/img/product/da/home-feed-mobile.png',
     label: 'Prøv det <strong>GRATIS</strong> idag!',
     theme: 'grey',
     vertical: 'realestate',

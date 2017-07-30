@@ -51,6 +51,9 @@
     button {
         @include theme-fuchsia;
         border: none;
+        &:hover, &:focus {
+          background-color: darken($theme-primary, 5%);
+        }
     }
   }
   &.plan--premium {
@@ -116,5 +119,9 @@
     background-color: transparent;
     border: 2px solid $theme-primary;
     color: $theme-primary;
+    transition: all 0.2s ease;
+    &:hover, &:focus {
+      background-color:rgba($theme-primary,0.2);
+    }
   }
 }

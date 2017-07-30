@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row middle-xs between-md {% if not data.flip %} reverse{% endif %}">
       <div class="module__content col-xs-12 col-sm-8 col-md-6">
-        <h2>{{data.title}}</h2>
+        <h2>{{data.title|safe}}</h2>
         <p>{{data.body|safe}}</p>
       </div>
       <div class="module__image col-xs-12 col-sm-6 col-md-5">

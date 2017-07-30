@@ -10,6 +10,10 @@
 
     <title>{{meta_title|default('Group messaging for busy teams')}} &ndash; Bello</title>
 
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
 
@@ -23,15 +27,15 @@
     <link rel="manifest" href="/img/icons/manifest.json?v=M4olQwanLb">
     <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg?v=M4olQwanLb" color="#eb1564">
     <link rel="shortcut icon" href="/img/icons/favicon.ico?v=M4olQwanLb">
-    <meta name="apple-mobile-web-app-title" content="Newsio">
+    <meta name="apple-mobile-web-app-title" content="Bello">
     <meta name="application-name" content="Newsio">
     <meta name="msapplication-config" content="/img/icons/browserconfig.xml?v=M4olQwanLb">
-    <meta name="theme-color" content="#1e1f3c">
+    <meta name="theme-color" content="#f7f6fa">
 
-    <meta property="og:title" content="{{meta_title|default('Team messaging for businesses')}} &ndash; Newsio" />
+    <meta property="og:title" content="{{meta_title|default('Team messaging for businesses')}} &ndash; Bello" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://newsio.com/" />
-    <meta property="og:image" content="{{meta_og_image|default('https://newsio.com/img/icons/op-image-newsio.png')}}" />
+    <meta property="og:image" content="{{absolute_url}}{{meta_og_image|default('/img/icons/op-image-newsio.png')}}" />
     <meta property="og:description" content="{{meta_description|default('Newsio takes the stress out of team communication so you can focus on work rather than just talking about work. It brings group chat, file-sharing, and employee advocacy into a single platform.')}}" />
     <meta property="og:logo" content="https://newsio.com/img/icons/newsio-logo.png" />
 

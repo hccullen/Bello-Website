@@ -27,6 +27,8 @@
     title: 'Better group messaging for busy teams.',
     body: 'No more frustrating email threads or endless group chats. Bello is a headache-free messaging app for the modern team.',
     alt: 'Hello there my dear friend',
+    video: '/img/product/mobile-hero.mp4',
+    poster: '/img/product/mobile-hero-poster.jpg',
     label: 'Try it <strong>FREE</strong> today',
     theme: 'fuchsia',
     button_theme: 'green'

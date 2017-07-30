@@ -2,18 +2,25 @@
 
 <div class="module tour--conversations theme-{{data.theme|default('grey')}} border-{{data.border|default('mini')}}">
   <div class="container">
-    <div class="row middle-xs{% if not data.flip %} reverse{% endif %}">
+    <div class="row between-sm middle-xs{% if not data.flip %} reverse{% endif %}">
       <div class="module__content col-xs-12 col-sm-6 col-md-5">
         <h2>{{data.title}}</h2>
         <p class="subtitle">{{data.subtitle}}</p>
-        <h3>New Topic, New Thread</h3>
-        <p>Stop getting lost in endless group chats. With Bello, you start a new thread for each conversation you start.</p>
-        <h3>New Topic, New Thread</h3>
-        <p>Stop getting lost in endless group chats. With Bello, you start a new thread for each conversation you start.</p>
-        {{data.body|safe}}
+        <h3>{{data.value1.title}}</h3>
+        <p>{{data.value1.body}}</p>
+        {% if data.value2 %}
+          <h3>{{data.value2.title}}</h3>
+          <p>{{data.value2.body}}</p>
+        {% endif %}
       </div>
       <div class="module__image col-xs-12 col-sm-6">
-        <img src="{{data.image}}" alt="{{data.alt}}">
+        {% if data.image %}
+          <img src="{{data.image}}" alt="{{data.alt}}">
+        {% elif data.video %}
+          <div class="tour__video">
+            <video src="{{data.video}}" autoplay loop class="tour__video" poster="{{data.poster}}"></video>
+          </div>
+        {% endif %}
       </div>
     </div>
 

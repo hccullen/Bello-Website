@@ -19,72 +19,48 @@
 
   {% set n = {
     type: 'sticky',
-    theme: 'light'
+    theme: 'dark'
   } %}
   {{ navigation.d(n) }}
 
   {% set h1 = {
-    title: 'Nem og hurtig intern kommunikation til den travle mæglerforretning.',
-    body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
+    title: 'Tired of Slack?',
+    body: 'Bello is a more organised way to communicate with your team.',
     alt: 'Hello there my dear friend',
-    label: 'Prøv det <strongGRATIS</strong> i dag!',
-    theme: 'grey',
-    vertical: 'realestate',
-    button_theme: 'fuchsia',
-    flip: true
+    video: '/img/product/mobile-hero.mp4',
+    poster: '/img/product/mobile-hero-poster.jpg',
+    button_theme: 'green'
   } %}
   {{ hero.d(h1) }}
 
   {% set m1 = {
     theme: 'grey',
-    title: 'Bello i Medierne'
+    title: 'In the Media'
   } %}
   {{ modulePress.d(m1) }}
 
   {% set m1 = {
-    title: 'Samarbejd som et team',
-    body: 'Har du brug for at få en til at tage et åbent hus for dig? Har du brug for en second opinion på en kontrakt? Med Bello er dine kollega et enkelt klik væk.</p><p>Men det hele skal ikke bare være effektivt. Derfor har vi også gjort Bello til et sted hvor du kan dele dine succeser og spørgsmål med dine kollegaer.',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend'
+    title: 'Groups chats are a mess.<br />Bello cleans it up.',
+    body: 'Having multiple discussions in a single thread can get really confusing really quickly.</p><p>Bello organises your messages into conversations, so no more guessing what that last message was in response to!',
+    image: 'https://newsio.com/img/product/send-to-team.png',
+    alt: 'Hello there my dear friend',
+    border: 'mini'
   } %}
   {{ moduleSimple.d(m1) }}
+
+
+  {% set m2 = {
+    title: 'How it stacks up',
+    theme: 'white'
+  } %}
+  {{ moduleComparison.d(m2) }}
+
   {% set m1 = {
     theme: 'grey'
   } %}
   {{ moduleCustomers.d(m1) }}
 
-  {% set m2 = {
-    title: 'Compared to X',
-    subtitle: 'jhabsn dkj fhkasj fksdhfgjhsgkj hsafheruhg uihg n asi haifaikf hasifioshfikola jao jfdkla klwaf jfklfklasakska lsakjf ofid f nj jks',
-    theme: 'white'
-  } %}
-  {{ moduleComparison.d(m2) }}
-
-
-
-
-  {% set m2 = {
-    title: 'Samtaler & Samarbejde',
-    body: 'Samtaler kan have forskellige former og størrelser. Alt fra diskussion om en bolig, en meddelelse til alle på kontoret eller planlægning af den næste sommerfest.</p><p>Ved alle samtaler starter du med en frisk chat tråd, som kun dem du sender den til kan se. Bello sørger for en langt mere fokuseret og organiseret kommunikation end normal chat eller email.',
-    image: 'https://newsio.com/img/product/da/post-with-notification.png',
-    alt: 'Hello there my dear friend',
-    theme: 'white',
-    flip: true
-  } %}
-  {{ moduleSimple.d(m2) }}
-
-  {% set m3 = {
-    title: 'Some Example Feature',
-    body: 'Subtitle 1',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend',
-    theme: 'grey'
-  } %}
-  {{ moduleSimple.d(m3) }}
-
   {% set m4 = {
-    label: 'Some Example Feature',
-    subtitle: 'Subtitle 1',
     button_theme: 'green'
   } %}
   {{ moduleCta.d(m4) }}

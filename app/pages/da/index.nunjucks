@@ -27,10 +27,12 @@
   {% set h1 = {
     title: 'Better group messaging for busy teams.',
     body: 'No more frustrating email threads or endless group chats. Bello is a headache-free messaging app for the modern team.',
-    alt: 'Hello there my dear friend',
-    label: 'Try it <strong>FREE</strong> today',
+    image: '/img/product/da/home-feed-mobile.png',
     theme: 'fuchsia',
-    button_theme: 'green'
+    button_theme: 'green',
+    label: 'Prøv det <strong>GRATIS</strong> idag!',
+    placeholder: 'Emailadresse',
+    cta: 'Kom i gang gratis'
   } %}
   {{ hero.d(h1) }}
 

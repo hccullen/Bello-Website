@@ -18,7 +18,12 @@
             <div class="iphone-screen-position">
              <div class="iphone-home-button"></div>
               <div class="iphone-screen">
-                <img src="{{data.image|default('http://res.cloudinary.com/newsio/image/upload/c_scale,w_258/v1500549972/iPhone_7_3_zyllny.png')}}" alt="{{data.alt|default('Bello app screenshot')}}" />
+
+                {% if data.video %}
+                  <video src="{{data.video}}" autoplay loop poster="{{data.poster}}"></video>
+                {% else %}
+                  <img src="{{data.image|default('/img/product/home-feed-mobile.png')}}" alt="{{data.alt|default('Bello app screenshot')}}" />
+                {% endif %}
               </div>
             </div>
             <div class="iphone-buttons-right"></div>

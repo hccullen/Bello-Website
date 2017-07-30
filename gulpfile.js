@@ -34,7 +34,10 @@ gulp.task('nunjucks', function() {
   return gulp.src('app/pages/**/*.+(html|nunjucks)')
   // Renders template with nunjucks
   .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['app/templates'],
+      data: {
+        absolute_url: 'https://belloforwork.com'
+      }
     }))
   // output files in app folder
   .pipe(gulp.dest('develop'))
@@ -110,6 +113,14 @@ gulp.task('minify-js', function() {
 });
 
 
+// gulp.task('critical', function () {
+//     return gulp.src('develop/*.html')
+//         .pipe(critical({base: 'dist/', inline: true}))
+//         .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+//         .pipe(gulp.dest('dist'));
+// });
+
+
 // Critical Path Inlining
 gulp.task('critical', ['minify-css'], function () {
     return gulp.src('develop/**/*.html')
@@ -127,9 +138,8 @@ gulp.task('critical', ['minify-css'], function () {
             height: 900,
             width: 1672
           }],
-          include: ['.nav-prerender','.logomark','.logotype'],
           ignore: ['@font-face',/url\(/],
-          minify: true
+          include: [/\.nav.*\.logotype/, /\.nav.*\.logomark/]
         }))
         .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
         .pipe(htmlmin({collapseWhitespace: true}))
@@ -174,7 +184,23 @@ gulp.task('build_copy', ['build_clean'], function () {
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: 'develop/'
+            baseDir: 'develop/',
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
+        },
+    })
+})
+
+
+// Configure the browserSync task
+gulp.task('buildtest', ['build'], function() {
+    browserSync.init({
+        server: {
+            baseDir: 'dist/',
+            serveStaticOptions: {
+                extensions: ["html"]
+            }
         },
     })
 })
@@ -185,7 +211,8 @@ gulp.task('browserSync', function() {
 gulp.task('default', ['nunjucks', 'sass', 'minify-css', 'minify-js']);
 
 // Production build
-gulp.task('build', ['nunjucks', 'sass', 'minify-css', 'minify-js','critical','build_clean', 'build_copy']);
+gulp.task('build', ['nunjucks', 'sass', 'minify-css', 'minify-js', 'critical', 'build_clean', 'build_copy']);
+
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js', 'image-move', 'nunjucks'], function() {
