@@ -6,7 +6,7 @@
 {% set meta_og_image = "" %} #}
 
 {% set title = "3 Grunde til at Hoteller bruger Bello" %}
-{% set main_image = "/img/landing/blog/restaurant.png" %}
+{% set meta_og_image = "/img/landing/blog/restaurant.png" %}
 {% set alt = "A photograph of someone using the Bello app on iPhone." %}
 
 

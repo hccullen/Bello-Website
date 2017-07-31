@@ -21,6 +21,7 @@
             <video src="{{data.video}}" autoplay loop class="tour__video" poster="{{data.poster}}"></video>
           </div>
         {% endif %}
+        
       </div>
     </div>
 

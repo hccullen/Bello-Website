@@ -44,7 +44,13 @@
     background-image: url(/img/landing/cleaning.jpg);
   }
   &.construction::after {
-    background-image: url(/img/landing/construction.jpg);
+    background-image: url(/img/landing/construction2.jpg);
+  }
+  &.hotel::after {
+    background-image: url(/img/landing/hotel.jpg);
+  }
+  &.restaurant::after {
+    background-image: url(/img/landing/restaurant.jpg);
   }
 
   .hero__content {

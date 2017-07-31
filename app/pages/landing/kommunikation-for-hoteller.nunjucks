@@ -9,8 +9,8 @@
 {% import 'components/block/block--cta.nunjucks' as blockCta %}
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
-{# {% set meta_title = "" %}
-{% set meta_description = "" %}
+{% set meta_title = "Kommunikation for Hoteller" %}
+{# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
 
@@ -19,7 +19,7 @@
 
   {% set n = {
     type: 'sticky',
-    theme: 'light',
+    theme: 'dark',
     language: 'da'
   } %}
   {{ navigation.d(n) }}
@@ -27,12 +27,11 @@
   {% set h1 = {
     title: 'Nem og hurtig intern kommunikation til den travle mæglerforretning.',
     body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
-    alt: 'Hello there my dear friend',
+    image: '/img/product/da/home-feed-mobile.png',
     label: 'Prøv det <strong>GRATIS</strong> idag!',
     theme: 'grey',
-    vertical: 'cleaning',
+    vertical: 'hotel',
     button_theme: 'fuchsia',
-    flip: true,
     border: 'full',
     placeholder: 'Emailadresse',
     cta: 'Kom i gang gratis'
@@ -48,7 +47,7 @@
   {% set m1 = {
     title: 'Samarbejd som et team',
     body: 'Har du brug for at få en til at tage et åbent hus for dig? Har du brug for en second opinion på en kontrakt? Med Bello er dine kollega et enkelt klik væk.</p><p>Men det hele skal ikke bare være effektivt. Derfor har vi også gjort Bello til et sted hvor du kan dele dine succeser og spørgsmål med dine kollegaer.',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
+    image: '/img/product/da/send-to-team.png',
     alt: 'Hello there my dear friend',
     border: 'mini'
   } %}
@@ -58,7 +57,7 @@
   {% set m2 = {
     title: 'Samtaler & Samarbejde',
     body: 'Samtaler kan have forskellige former og størrelser. Alt fra diskussion om en bolig, en meddelelse til alle på kontoret eller planlægning af den næste sommerfest.</p><p>Ved alle samtaler starter du med en frisk chat tråd, som kun dem du sender den til kan se. Bello sørger for en langt mere fokuseret og organiseret kommunikation end normal chat eller email.',
-    image: 'https://newsio.com/img/product/da/post-with-notification.png',
+    image: '/img/product/da/post-with-notification.png',
     alt: 'Hello there my dear friend',
     theme: 'white',
     flip: true,
@@ -69,7 +68,7 @@
   {% set m1 = {
     title: 'Slut med dokumenter over det hele!',
     body: 'Papirarbejde og dokumenter kan ofte være besværligt, men Bello hjælper dig med at finde de rette dokumenter til hver enkelt bolig samlet ét sted.</p><p>Det betyder ikke noget om det er et Word dokument, PDF eller et billede, du kan nemt dele filer til enkelte kollegaer eller hele teams. Det kunne ikke blive nemmere.',
-    image: 'https://newsio.com/img/product/documents-upload.svg',
+    image: '/img/product/documents-upload.svg',
     alt: 'Hello there my dear friend'
   } %}
   {{ moduleSimple.d(m1) }}

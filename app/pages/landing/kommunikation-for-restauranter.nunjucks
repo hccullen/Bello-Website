@@ -9,8 +9,8 @@
 {% import 'components/block/block--cta.nunjucks' as blockCta %}
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
-{# {% set meta_title = "" %}
-{% set meta_description = "" %}
+{% set meta_title = "Kommunikation for Restauranter" %}
+{# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
 
@@ -19,7 +19,7 @@
 
   {% set n = {
     type: 'sticky',
-    theme: 'light',
+    theme: 'dark',
     language: 'da'
   } %}
   {{ navigation.d(n) }}
@@ -30,9 +30,8 @@
     image: '/img/product/da/home-feed-mobile.png',
     label: 'Prøv det <strong>GRATIS</strong> idag!',
     theme: 'grey',
-    vertical: 'cleaning',
+    vertical: 'restaurant',
     button_theme: 'fuchsia',
-    flip: true,
     border: 'full',
     placeholder: 'Emailadresse',
     cta: 'Kom i gang gratis'

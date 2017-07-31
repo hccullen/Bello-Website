@@ -9,7 +9,7 @@
 {% import 'components/block/block--cta.nunjucks' as blockCta %}
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
-{% set meta_title = "Kommunikation for Ejendomsmaegler" %}
+{% set meta_title = "Kommunikation for Håndværkere]" %}
 {# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
@@ -19,7 +19,7 @@
 
   {% set n = {
     type: 'sticky',
-    theme: 'light',
+    theme: 'dark',
     language: 'da'
   } %}
   {{ navigation.d(n) }}
@@ -29,10 +29,9 @@
     body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
     image: '/img/product/da/home-feed-mobile.png',
     label: 'Prøv det <strong>GRATIS</strong> idag!',
-    theme: 'grey',
-    vertical: 'realestate',
-    button_theme: 'fuchsia',
-    flip: true,
+    theme: 'fuchsia',
+    vertical: 'construction',
+    button_theme: 'green',
     border: 'full',
     placeholder: 'Emailadresse',
     cta: 'Kom i gang gratis'

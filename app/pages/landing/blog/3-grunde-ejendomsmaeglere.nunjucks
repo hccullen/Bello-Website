@@ -6,7 +6,7 @@
 {% set meta_og_image = "" %} #}
 
 {% set title = "3 Grunde til at ejendomsmæglere bruger Bello" %}
-{% set main_image = "/img/landing/blog/real-estate.png" %}
+{% set meta_og_image = "/img/landing/blog/real-estate.png" %}
 {% set alt = "A photograph of someone using the Bello app on iPhone." %}
 
 

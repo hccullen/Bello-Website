@@ -9,7 +9,7 @@
 {% import 'components/block/block--cta.nunjucks' as blockCta %}
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
-{% set meta_title = "Kommunikation for Ejendomsmaegler" %}
+{% set meta_title = "Kommunikation for Rengøringsvirksomheder" %}
 {# {% set meta_description = "" %}
 {% set meta_og_image = "" %} #}
 
@@ -30,7 +30,7 @@
     image: '/img/product/da/home-feed-mobile.png',
     label: 'Prøv det <strong>GRATIS</strong> idag!',
     theme: 'grey',
-    vertical: 'realestate',
+    vertical: 'cleaning',
     button_theme: 'fuchsia',
     flip: true,
     border: 'full',
