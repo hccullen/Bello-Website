@@ -22,8 +22,8 @@
 
   {% set n = {
     pretitle: 'Priser',
-    title: 'Fixed Prices. Zero Surprises.',
-    subtitle: 'Probably just a small subtitle here explaining our fixed price structure, because it’s pretty awesome for businesses. Trust me.'
+    title: 'Faste Priser. Ingen Overraskelser.',
+    subtitle: 'Bello fungerer bedst med hele teamet ombord. Derfor har vi en prissætning der er til at forstå. Faste priser betyder at der ikke vil komme nogen overraskelser, du kan være helt rolig.'
   } %}
   {{ title.d(n) }}
 
@@ -34,13 +34,13 @@
     {% set p1 = {
       title1: 'Gratis',
       title2: 'For Evigt',
-      list: ['Up to 10 users','Limited Message History','1GB File Storage','Email Support'],
+      list: ['Op til 10 brugere','Begrænset Besked Historie','1GB til Filer','Email Support'],
       cta: 'Kom i Gang'
     } %}
     {% set p2 = {
       title1: '10',
       title2: 'Bruger',
-      list: ['Up to 10 users','Unlimited Messages','10GB File Storage','Email & Phone Support'],
+      list: ['Op til 10 brugere','Ubegrænset beskeder','10GB til filer','Email & Telefon Support'],
       cta: 'Prøv det Gratis',
       total: 'Total',
       value: '160kr',
@@ -49,8 +49,8 @@
     } %}
     {% set p3 = {
       title1: '20',
-      title2: 'Bruger',
-      list: ['Up to 20 users','Unlimited Messages','20GB File Storage','Email & Phone Support'],
+      title2: 'Brugere',
+      list: ['Op til 20 Brugere','Ubegrænset beskeder','20GB til filer','Email & Telefon Support'],
       cta: 'Prøv det Gratis',
       total: 'Total',
       value: '350kr',
@@ -61,14 +61,20 @@
     {% set p4 = {
       title1: '50',
       title2: 'Bruger',
-      list: ['Up to 10 users','Unlimited Messages','100GB File Storage','Email & Phone Support'],
+      list: ['Op til 50 brugere','Ubegrænset beskeder','100GB til filer','Email & Telefon Support'],
       cta: 'Prøv det Gratis',
       total: 'Total',
       value: '950kr',
       period: "/md",
       planType: 'premium'
     } %}
-    {{ modulePlans.d(data,p1,p2,p3,p4) }}
+    {% set p5 = {
+      title: 'Flere end 50 bruger?',
+      body: 'Vi har plads til virksomheder og teams i alle størrelser! Du er meget velkommen til at kontakte os, hvis du ønsker mere end 50 brugere. Vi hjælper også gerne med on-boarding, implementering og tilpasning ved mere end 50 brugere.',
+      cta: 'Send os en besked',
+      prefill_msg: 'I am interested in getting Bello Enterprise for my team.'
+    } %}
+    {{ modulePlans.d(data,p1,p2,p3,p4,p5) }}
 
 
 

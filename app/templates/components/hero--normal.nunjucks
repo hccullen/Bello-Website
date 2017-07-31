@@ -20,7 +20,7 @@
               <div class="iphone-screen">
 
                 {% if data.video %}
-                  <video src="{{data.video}}" autoplay loop poster="{{data.poster}}"></video>
+                  <video src="{{data.video}}" autoplay muted loop poster="{{data.poster}}"></video>
                 {% else %}
                   <img src="{{data.image|default('/img/product/home-feed-mobile.png')}}" alt="{{data.alt|default('Bello app screenshot')}}" />
                 {% endif %}

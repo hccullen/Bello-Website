@@ -6,8 +6,8 @@
       <div class="col-xs-12">
         {% include 'partials/global/form--lead.nunjucks' %}
         <h5>{{data.subtitle|default('Or Download the App')}}</h5>
-        <a class="button--download apple" href="https://itunes.apple.com/us/app/snapchat/id447188370?mt=8">Download on the App Store</a>
-        <a data-vendor="google" class="button--download google" href="https://play.google.com/store/apps/details?id=com.newsio.newsio">Get it on Google Play</a>
+        <a class="button--download apple" href="https://itunes.apple.com/app/newsio/id1085026307">Download on the App Store</a>
+        <a class="button--download google" href="https://play.google.com/store/apps/details?id=com.newsio.newsio">Get it on Google Play</a>
       </div>
     </div>
   </div>

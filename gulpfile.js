@@ -170,7 +170,7 @@ gulp.task('build_clean', function () {
 gulp.task('build_copy', ['build_clean'], function () {
   return es.merge(
       gulp.src('app/img/**/*.*').pipe(gulp.dest('dist/img')),
-      gulp.src('app/scripts/**/*.*').pipe(gulp.dest('dist/scripts')),
+      gulp.src('app/public/**/*.*').pipe(gulp.dest('dist/public')),
       gulp.src('develop/css/**/*.min.css').pipe(gulp.dest('dist/css')),
       gulp.src('develop/js/*.js').pipe(gulp.dest('dist/js'))
     );

@@ -39,53 +39,6 @@
     theme: 'grey'
   } %}
   {{ modulePress.d(m1) }}
-{#
-  {% set m1 = {
-    title: 'Some Example Feature',
-    body: 'Subtitle 1',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend'
-  } %}
-  {{ moduleSimple.d(m1) }}
-  {% set m1 = {
-    theme: 'grey'
-  } %}
-  {{ moduleCustomers.d(m1) }}
 
-  {% set m2 = {
-    title: 'Compared to X',
-    subtitle: 'jhabsn dkj fhkasj fksdhfgjhsgkj hsafheruhg uihg n asi haifaikf hasifioshfikola jao jfdkla klwaf jfklfklasakska lsakjf ofid f nj jks',
-    theme: 'white'
-  } %}
-  {{ moduleComparison.d(m2) }}
-
-
-
-
-  {% set m2 = {
-    title: 'Some cool Feature',
-    body: 'Subtitle 1',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend',
-    theme: 'white',
-    flip: true
-  } %}
-  {{ moduleSimple.d(m2) }}
-
-  {% set m3 = {
-    title: 'Some Example Feature',
-    body: 'Subtitle 1',
-    image: 'https://newsio.com/img/product/da/send-to-team.png',
-    alt: 'Hello there my dear friend',
-    theme: 'grey'
-  } %}
-  {{ moduleSimple.d(m3) }}
-
-  {% set m4 = {
-    label: 'Some Example Feature',
-    subtitle: 'Subtitle 1',
-    button_theme: 'green'
-  } %}
-  {{ moduleCta.d(m4) }} #}
 
 {% endblock %}

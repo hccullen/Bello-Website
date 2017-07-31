@@ -22,7 +22,7 @@
   {% set n = {
     pretitle: 'Pricing',
     title: 'Fixed Prices. Zero Surprises.',
-    subtitle: 'Probably just a small subtitle here explaining our fixed price structure, because it’s pretty awesome for businesses. Trust me.'
+    subtitle: 'Bello works best when your whole team is on. That\'s why we don\'t penalise you when you need to add additional users. Fixed pricing means you always know what you\'re paying.'
   } %}
   {{ title.d(n) }}
 
@@ -67,7 +67,13 @@
       period: "/mth",
       planType: 'premium'
     } %}
-    {{ modulePlans.d(data,p1,p2,p3,p4) }}
+    {% set p5 = {
+      title: 'More than 50 users?',
+      body: 'We have solutions for teams of all sizes. If you\'re interested in rolling out Bello in your team, please get in contact with us.',
+      cta: 'Send us a message',
+      prefill_msg: 'I am interested in getting Bello Enterprise for my team.'
+    } %}
+    {{ modulePlans.d(data,p1,p2,p3,p4,p5) }}
 
 
 

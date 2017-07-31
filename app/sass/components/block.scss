@@ -48,7 +48,7 @@
   }
   &.plan--featured {
     border-color: $theme-primary;
-    button {
+    .btn {
         @include theme-fuchsia;
         border: none;
         &:hover, &:focus {
@@ -114,12 +114,15 @@
     background-color: rgba($theme-secondary,0.02);
     padding:1rem;
   }
-  button {
+  .btn, button {
     margin: 0 auto;
     background-color: transparent;
     border: 2px solid $theme-primary;
     color: $theme-primary;
     transition: all 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
     &:hover, &:focus {
       background-color:rgba($theme-primary,0.2);
     }

@@ -20,22 +20,21 @@
   {{ navigation.d(n) }}
 
   {% set n = {
-    pretitle: 'Introducing',
     title: 'Bello',
-    subtitle: 'Group Messaging for Busy Teams'
+    subtitle: 'Bedre intern kommunikation for travle teams'
   } %}
   {{ title.d(n) }}
 
   {% set m1 = {
-    title: 'Conversations',
-    subtitle: 'It\'s what group messaging would look like if it were invented today.',
+    title: 'Samtaler',
+    subtitle: 'Gruppebeskeder ville se sådan her ud, hvis det var opfundet i dag.',
     value1: {
-      title: 'New Topic. New Thread.',
-      body: 'Stop getting lost in endless group chats. With Bello, each conversation you start has its own chat thread so discussions stay focused.'
+      title: 'Nyt Emne. Ny Tråd.',
+      body: 'Slut med at forvirrende gruppebeskeder. Hver samtale starter med en ny tråd, på den måde forbliver samtalen fokuseret.'
     },
     value2: {
-      title: 'More than just messages.',
-      body: 'Have discussions, send files, and share links with your team at the speed of light. Whether it\'s PDFs, pictures, or funny YouTube videos, we got you covered.'
+      title: 'Mere end bare chat.',
+      body: 'Start samtaler, send filer, og del links med dit team. Om det er en PDF,  et billede, eller en sjov kattevideo fra YouTube, så kan du dele det med dit team.'
     },
     body: '',
     video: '/img/product/conversations.mp4',
@@ -46,14 +45,14 @@
 
   {% set m1 = {
     title: 'Home Feed',
-    subtitle: 'Getting an overview of all your messages has never been easier.',
+    subtitle: 'Få et overblik over alle dine samtaler, det har aldrig været nemmere.',
     value1: {
-      title: 'All in one place.',
-      body: 'You don\'t have to check six different places to get up-to-date. All your conversations are in your home feed.'
+      title: 'Alt samlet et sted.',
+      body: ' Du behøver ikke at tjekke seks forskellige steder for at være up-to-date. Alle dine samtaler er samlet i dit home feed.'
     },
     value2: {
-      title: 'Polite Notifications.',
-      body: 'Constant pings on your phone gets super annoying. Bello knows this, and won\'t disturb you unless it\'s relevant to you.'
+      title: 'Brugbare Notifikationer.',
+      body: 'Konstante notifikationer på din telefon er super irriternede og forstyrrende. Det ved vi godt hos Bello, og derfor vil vi ikke forstyrre dig medmindre det er relevant.'
     },
     video: '/img/product/home-feed.mp4',
     poster: '/img/product/home-feed-poster.png',
@@ -63,21 +62,22 @@
   {{ tourSimple.d(m1) }}
 
   {% set m1 = {
-    title: 'Collaboration',
-    subtitle: 'You decide how you want to work.',
+    title: 'Samarbejde',
+    subtitle: 'Du bestemmer hvordan du vil arbejde.',
     value1: {
-      title: 'People or Groups. Or both.',
-      body: 'No need to create a new group each time you want to start a conversation with multiple people. Just select the recipients and start writing.'
+      title: 'Enkelt personer eller Grupper. eller begge.',
+      body: 'Ingen grund til at lave en ny gruppe hver gang du vil starte en ny samtale med flere. Du vælger bare gruppen fra tidligere og sender din besked .'
     },
     value2: {
-      title: 'Add People Any Time.',
-      body: 'Suddenly realise you need to invite someone to the discussion. With Bello, you can add anyone to a conversation at any time.'
+      title: 'Tilføj nye til samtalen.',
+      body: 'Du finder pludselig ud af at du har glemt at invitere en til samtalen. Med Bello, kan du tilføje folk til samtalen selvom i har startet samtalen.'
     },
     body: '',
     video: '/img/product/collaboration.mp4',
     poster: '/img/product/collaboration-poster.png'
   } %}
   {{ tourSimple.d(m1) }}
+
 
 
   {% set m4 = {

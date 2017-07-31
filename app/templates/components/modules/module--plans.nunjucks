@@ -1,6 +1,6 @@
 {% macro d(data,p1,p2,p3,p4,p5) %}
 
-<div class="module module--mini theme-{{data.theme|default('grey')}} border-{{data.border|default('full')}}{% if data.bottom %} bottom-padding{% endif %}">
+<div class="module module--mini theme-{{data.theme|default('grey')}} border-{{data.border|default('full')}}{% if data.bottom %} bottom-padding{% endif %} ">
   <div class="container">
     <div class="row between-md">
 
@@ -18,14 +18,26 @@
               <span class="price__total">{{plan.total}}</span>
               <span class="price__value">{{plan.value}}<span class="price__period">{{plan.period}}</span></span>
             {% endif %}
-            <button type="button" name="button">{{plan.cta}}</button>
+            <a href="https://front.belloforwork.com/create-team" class="btn">{{plan.cta}}</a>
           </div>
         </div>
       </div>
       {% endfor %}
 
     </div>
+
+    {% if p5 %}
+      <div class="row middle-xs center-xs">
+        <div class="col-xs-12 col-md-8 block--price-plan">
+          <h3>{{ p5.title }}</h3>
+          <p>{{ p5.body }}</p>
+          {% if p5.cta %} <button class="btn" type="button" name="button" onclick="Intercom('showNewMessage', '{{p5.prefill_msg}}');">{{p5.cta}}</button>{% endif %}
+        </div>
+      </div>
+    {% endif %}
+
   </div>
 </div>
+
 
 {% endmacro %}

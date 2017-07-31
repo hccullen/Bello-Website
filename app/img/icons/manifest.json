@@ -1,0 +1,22 @@
+{
+    "name": "Bello Team Messaging",
+    "short_name": "Bello Website",
+    "lang": "en-US",
+    "icons": [
+        {
+            "src": "/img/icons/android-chrome-192x192.png?v=M4olQwanLb",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icons/android-chrome-512x512.png?v=M4olQwanLb",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#D4125A",
+    "background_color": "#f7f6fa",
+    "start_url": "https://belloforwork.com",
+    "display": "standalone",
+    "orientation": "portrait"
+}

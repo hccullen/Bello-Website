@@ -15,13 +15,13 @@
         {% if data.language == 'da' %}
           <li><a class="nav__link" href="/da/product">Funktioner</a></li>
           <li><a class="nav__link" href="/da/pricing">Priser</a></li>
-          <li><a class="nav__link" href="#">Blog</a></li>
+          <li><a class="nav__link" href="http://blog.belloforwork.com">Blog</a></li>
           <li><a class="nav__link" href="https://auth.belloforwork.com">Login</a></li>
           <li><a class="nav__link nav__cta" href="https://front.belloforwork.com/create-team">Kom i gang GRATIS</a></li>
         {% else %}
           <li><a class="nav__link" href="/product">Product</a></li>
           <li><a class="nav__link" href="/pricing">Pricing</a></li>
-          <li><a class="nav__link" href="#">Blog</a></li>
+          <li><a class="nav__link" href="http://blog.belloforwork.com">Blog</a></li>
           <li><a class="nav__link" href="https://auth.belloforwork.com">Log In</a></li>
           <li><a class="nav__link nav__cta" href="https://front.belloforwork.com/create-team">Get Started for FREE</a></li>
         {% endif %}

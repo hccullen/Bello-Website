@@ -10,8 +10,8 @@
 {% import 'components/modules/module--cta.nunjucks' as moduleCta %}
 
 {% set meta_title = "Kommunikation for Ejendomsmaegler" %}
-{# {% set meta_description = "" %}
-{% set meta_og_image = "" %} #}
+{% set meta_description = "Nem og hurtig intern kommunikation til den travle mæglerforretning." %}
+{# {% set meta_og_image = "" %} #}
 
 
 
@@ -28,7 +28,6 @@
     title: 'Nem og hurtig intern kommunikation til den travle mæglerforretning.',
     body: 'Bello er en nem og intuitiv kommunikationsplatform til den moderne ejendomsmægler. Sig farvel til langsomme og uoverskuelige emails og prøv istedet Bello nu!',
     image: '/img/product/da/home-feed-mobile.png',
-    label: 'Prøv det <strong>GRATIS</strong> idag!',
     theme: 'grey',
     vertical: 'realestate',
     button_theme: 'fuchsia',

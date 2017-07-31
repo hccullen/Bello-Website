@@ -1,6 +1,5 @@
-button {
+.btn {
   display: block;
-  height: 3rem;
   padding: 0 0.5rem;
   vertical-align: middle;
   text-transform: uppercase;
@@ -12,7 +11,7 @@ button {
   cursor: pointer;
   @media screen and (min-width: 24em) {
    font-size: 0.85rem;
-   padding: 0 1rem;
+   padding: 1.075rem 1rem;
   }
 
   &.button--theme-fuchsia {

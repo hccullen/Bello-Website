@@ -1,7 +1,10 @@
-<form action="abc.php" method="POST" id="top-form" class="form--cta">
+<form action="{{absolute_url}}/public/scripts/submitForm.php" method="POST" id="top-form" class="form--cta">
   <label for="fieldEmail">{{data.label | default('Try it free today') | safe}}</label>
   <span class="form__lead-field">
-  <input name="leadEmail" type="email" placeholder="{{data.placeholder|default('Email Address')}}" required>
-  <button type="submit" class="submit button--theme-{{data.button_theme|default('fuchsia')}}">{{data.cta|default('Get Started')}}</button>
+  <input name="leadEmail" type="email" placeholder="{{cta_placeholder|default('Email Address')}}" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+  <input name="_autopilot_session_id" type="hidden">
+  <input name="currentPage" type="hidden">
+  <input name="formID" type="hidden" value="hero">
+  <button type="submit" class="btn submit button--theme-{{data.button_theme|default('fuchsia')}}">{{data.cta|default('Get Started')}}</button>
   </span>
 </form>

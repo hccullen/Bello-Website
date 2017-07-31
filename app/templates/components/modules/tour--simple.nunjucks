@@ -18,10 +18,10 @@
           <img src="{{data.image}}" alt="{{data.alt}}">
         {% elif data.video %}
           <div class="tour__video">
-            <video src="{{data.video}}" autoplay loop class="tour__video" poster="{{data.poster}}"></video>
+            <video src="{{data.video}}" autoplay muted loop class="tour__video" poster="{{data.poster}}"></video>
           </div>
         {% endif %}
-        
+
       </div>
     </div>
 

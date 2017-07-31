@@ -7,7 +7,7 @@
 {% set meta_og_image = "" %} #}
 
 {% block content %}
-<h5>Last updated: 28 July 2017</h5>
+<h5>Last updated: 1 August 2017</h5>
 <h2>The Basics</h2>
 <p>Newsio News ApS. ("Bello") operates the Bello service, which we hope You (the "Customer", "You", or "Your") use. If You use it, please use it responsibly. If You don't, we'll have to terminate Your account.</p>
 <p>For paid accounts, you'll be charged on a monthly basis. You can cancel anytime, but there are no refunds.</p>

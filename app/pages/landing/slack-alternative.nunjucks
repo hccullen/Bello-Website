@@ -42,7 +42,7 @@
   {% set m1 = {
     title: 'Groups chats are a mess.<br />Bello cleans it up.',
     body: 'Having multiple discussions in a single thread can get really confusing really quickly.</p><p>Bello organises your messages into conversations, so no more guessing what that last message was in response to!',
-    image: 'https://newsio.com/img/product/send-to-team.png',
+    image: '/img/product/send-to-team.png',
     alt: 'Hello there my dear friend',
     border: 'mini'
   } %}
